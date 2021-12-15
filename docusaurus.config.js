@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'e-PSHAD',
+  title: 'PAD+',
   tagline: 'Dinosaurs are cool',
-  url: 'https://e-PSHAD/full-doc',
-  baseUrl: '/',
+  url: 'https://e-PSHAD.github.io',
+  baseUrl: '/pad-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'e-PSHAD', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'pad-doc', // Usually your repo name.
 
   presets: [
     [
