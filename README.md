@@ -1,6 +1,6 @@
-## PAD+ tech doc
+## PAD+ | Technical documentation 🚀🚀
 
-[Pad-doc](https://e-pshad.github.io/pad-doc/){target="_blank"} contains the full technical documentation of the [PAD+ project](https://github.com/e-PSHAD/PAD){:target="_blank"}.
+[Pad-doc](https://e-pshad.github.io/pad-doc/) contains the full technical documentation of the [PAD+ project](https://github.com/e-PSHAD/PAD).
 
 
 ### 1. Technical requirements (WSL)
@@ -71,4 +71,4 @@ Not using SSH:
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-### Start with [pad-doc](https://e-pshad.github.io/pad-doc/ target="_blank")! 🚀🚀
+#### Start with [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀
