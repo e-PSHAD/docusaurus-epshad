@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PAD+',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Welcome to our technical documentation!',
   url: 'https://e-PSHAD.github.io',
   baseUrl: '/pad-doc/',
   onBrokenLinks: 'throw',
@@ -53,7 +53,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
