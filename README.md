@@ -1,6 +1,6 @@
 ## PAD+ tech doc
 
-The docusaurus site [pad-doc](https://e-pshad.github.io/pad-doc/) contains the full technical documentation of the PAD+ project.
+Our site [e-pshad.github.io/pad-doc](https://e-pshad.github.io/pad-doc/){:target="_blank"} contains the full technical documentation of the [PAD+ project](https://github.com/e-PSHAD/PAD){:target="_blank"}.
 
 
 ### 1. Technical requirements (WSL)
@@ -50,14 +50,14 @@ This command starts a local development server and opens up a browser window. Mo
 $ yarn start
 ```
 
-Once changes have been made
+Once changes have been made:
 ```
 git add .
 git commit -m "your message"
 git push origin main
 ```
 
-## 4. Deploying to GitHub Pages
+### 4. Deploying to GitHub Pages
 
 Using SSH:
 
@@ -70,3 +70,5 @@ Not using SSH:
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
+
+#### Start with [e-pshad.github.io/pad-doc](https://e-pshad.github.io/pad-doc/){:target="_blank"}!
