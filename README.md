@@ -1,40 +1,63 @@
-# PAD-doc : technical documentation of PAD+ project
+## PAD+ tech doc
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The docusaurus site [pad-doc](https://e-pshad.github.io/pad-doc/) contains the full technical documentation of the PAD+ project.
 
-## 1. Technical requirements
 
-## 2. Setup
+### 1. Technical requirements (WSL)
 
-## 3. Git clone
-
-## 4. How to collaborate ? (deployment)
-
-## 5. Useful commands
-
-### Installation
-
+Install node.js
 ```
-$ yarn
+$ sudo apt-get install curl
+
+# Install nvm with
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+$ nvm ls
+
+# Install the current stable LTS release of Node.js
+$ nvm install --lts
+
+# Install the current release of Node.js
+$ nvm install node
 ```
 
-### Local Development
+Install yarn
+```
+$ curl -o- -L https://yarnpkg.com/install.sh | bash
+```
 
+### 2. Cloning the repository
+
+a. Above the list of files, click **Code**.
+
+b. Copy HTTPS address.
+
+b. Open Terminal Git Bash.
+
+c. Change the current working directory to the location where you want the cloned directory.
+
+d. Type git clone, and then paste the URL you copied earlier.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+e. Press Enter to create your local clone.
+
+
+### 3. How to collaborate?
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 ```
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
+Once changes have been made
 ```
-$ yarn build
+git add .
+git commit -m "your message"
+git push origin main
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
+## 4. Deploying to GitHub Pages
 
 Using SSH:
 
@@ -47,5 +70,3 @@ Not using SSH:
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
