@@ -66,4 +66,4 @@ Not using SSH:
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-#### Start with [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀🚀🚀
+### 5. Start [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀🚀🚀
