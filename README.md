@@ -27,20 +27,15 @@ $ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ### 2. Cloning the repository
 
-    * a. Above the list of files, click **Code**.
-
-    * b. Copy HTTPS address.
-
-    * b. Open Terminal Git Bash.
-
-    * c. Change the current working directory to the location where you want the cloned directory.
-
-    * d. Type git clone, and then paste the URL you copied earlier.
+* Above the list of files, click **Code**.
+* Copy HTTPS address.
+* Open Terminal Git Bash.
+* Change the current working directory to the location where you want the cloned directory.
+* Type git clone, and then paste the URL you copied earlier.
 ```
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
-
-    * e. Press Enter to create your local clone.
+* Press Enter to create your local clone.
 
 
 ### 3. How to collaborate?
