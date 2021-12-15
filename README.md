@@ -1,6 +1,16 @@
-# Website
+# PAD-doc : technical documentation of PAD+ project
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+## 1. Technical requirements
+
+## 2. Setup
+
+## 3. Git clone
+
+## 4. How to collaborate ? (deployment)
+
+## 5. Useful commands
 
 ### Installation
 
