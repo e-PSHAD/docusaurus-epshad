@@ -1,4 +1,4 @@
-## PAD+ | Technical documentation 🚀🚀
+## PAD+ 🚀🚀 Technical documentation 🚀🚀
 
 [Pad-doc](https://e-pshad.github.io/pad-doc/) contains the full technical documentation of the [PAD+ project](https://github.com/e-PSHAD/PAD).
 
@@ -71,4 +71,4 @@ Not using SSH:
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-#### Start with [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀
+#### 🚀🚀🚀🚀 Start with [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀🚀🚀
