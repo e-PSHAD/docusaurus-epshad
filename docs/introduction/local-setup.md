@@ -1,10 +1,7 @@
 ---
-sidebar_position: 1
-slug: /
+sidebar_position: 2
 ---
 # Local Setup
-
-## Last test from local push
 
 ## Principe
 On va utiliser WSL, une intégration Linux directement sous Windows, pour installer et gérer les fichiers.
