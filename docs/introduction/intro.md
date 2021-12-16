@@ -46,13 +46,7 @@ sidebar_position: 2
 
 1. Accédez **au dépôt [GitHub](https://github.com/e-PSHAD/pad-doc)**
 2. Cliquez sur le dossier `Docs`
-
-<!-- ![docs](/img/tutorial-how-to-collaborate/docs.png) -->
-
 3. Cliquez sur `Add a file` et selectionnez `Create a new file`
-
-<!-- ![docs](/img/tutorial-how-to-collaborate/create-new-file.png) -->
-
 4. **Ajoutez un nom à votre groupe** avec `/` à la fin. Cela créera automatiquement le dossier
 
 ![docs](/img/tutorial-how-to-collaborate/automatique-creation.png)
@@ -75,13 +69,7 @@ Respectez la nomenclature suivante `my-new-category`
 :::caution ATTENTION
 Ne donnez pas un numéro qui a déjà été attribué
 :::
-
-<!-- ![docs](/img/tutorial-how-to-collaborate/complete-category-json.png) -->
-
 7. En bas de l'écran, **donnez un titre/description à la modification** et cliquez sur le bouton `Commit new file`
-
-<!-- ![docs](/img/tutorial-how-to-collaborate/new-commit.png) -->
-
 8. **La catégorie est prête !** Il apparaîtra dans la barre latérale une fois que vous aurez ajouté un onglet
 
 
@@ -89,26 +77,19 @@ Ne donnez pas un numéro qui a déjà été attribué
 
 1. Placez-vous dans la catégorie dans laquelle vous souhaitez créer le contenu. Par exemple, `pad-doc/docs/new-folder/`
 2. Cliquez sur `Add a file`et selectionnez `Create a new file`
+3. **Ajoutez un nom** avec la termination `.md`
 
-<!-- ![docs](/img/tutorial-how-to-collaborate/create-new-file.png) -->
+![docs](/img/tutorial-how-to-collaborate/intro-md.png)
 
-2. **Ajoutez un nom** avec la termination `.md`
-
-<!-- ![docs](/img/tutorial-how-to-collaborate/intro-md.png) -->
-
-3. Ajoutez le contenu suivant en haut du document **et spécifiez sa position**
+4. Ajoutez le contenu suivant en haut du document **et spécifiez sa position**
 ```
 ---
 sidebar_position: 2
 ---
 ```
-
-4. **Ajoutez du contenu** en respectant les règles **[Markdown Features](https://docusaurus.io/docs/next/markdown-features)**
+5. **Ajoutez du contenu** en respectant les règles **[Markdown Features](https://docusaurus.io/docs/next/markdown-features)**
 
 ![docs](/img/tutorial-how-to-collaborate/create-content.png)
 
-5. En bas de l'écran, **donnez un titre/description à la modification** et cliquez sur le bouton `Commit new file`
-
-<!-- ![docs](/img/tutorial-how-to-collaborate/commit-tab.png) -->
-
-6. C'est prêt ! 
+6. En bas de l'écran, **donnez un titre/description à la modification** et cliquez sur le bouton `Commit new file`
+7. C'est prêt ! 

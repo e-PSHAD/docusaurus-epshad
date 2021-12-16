@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Local Setup
+# Setup Local
 
 ## Principe
 On va utiliser WSL, une intégration Linux directement sous Windows, pour installer et gérer les fichiers.
