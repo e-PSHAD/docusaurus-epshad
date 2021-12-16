@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/pad-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/lightbulb-regular.ico',
   organizationName: 'e-PSHAD', // Usually your GitHub org/user name.
   projectName: 'pad-doc', // Usually your repo name.
 
@@ -44,16 +44,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'PAD+',
+        title: 'PAD+ Documentation',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/lightbulb-regular.svg',
         },
         items: [
           // If you want to have a new tab in the navigation bar uncomment line below
           // {to: '/docs/introduction/local-setup', label: 'Documentation', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/e-PSHAD/pad-doc',
             label: 'GitHub',
             position: 'right',
           },
