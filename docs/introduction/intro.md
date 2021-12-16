@@ -7,7 +7,7 @@ slug: /
 ## Depuis la terminal WSL
 
 :::info INFO
-Avant de commencerL, n'oubliez pas de suivre les instructions d'installation **[README.md](https://github.com/e-PSHAD/pad-doc)**
+Avant de commencer, n'oubliez pas de suivre les instructions d'installation **[README.md](https://github.com/e-PSHAD/pad-doc)**
 :::
 
 ### Comment créer une nouvelle catégorie ?
