@@ -24,6 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          routeBasePath: '/',
           editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
         blog: {
@@ -49,14 +50,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Documentation',
-          // },
-          {to: '/docs/introduction/local-setup', label: 'Documentation', position: 'left'},
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          // If you want to have a new tab in the navigation bar uncomment line below
+          // {to: '/docs/introduction/local-setup', label: 'Documentation', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
