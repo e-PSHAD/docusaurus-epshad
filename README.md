@@ -54,16 +54,10 @@ git push origin main
 
 ### 4. Deploying to GitHub Pages
 
-Using SSH:
+This action will automatically deploy the site due to GitHub Actions located in the `.github/workflows/` folder
 
 ```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+git push origin main
 ```
 
 ### 5. Start [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀🚀🚀
