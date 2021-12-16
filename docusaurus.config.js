@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/pad-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/lightbulb-regular.ico',
+  favicon: 'img/favicon.ico',
   organizationName: 'e-PSHAD', // Usually your GitHub org/user name.
   projectName: 'pad-doc', // Usually your repo name.
 
@@ -47,7 +47,7 @@ const config = {
         title: 'PAD+ Documentation',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/lightbulb-regular.svg',
+          src: 'img/logo.svg',
         },
         items: [
           // If you want to have a new tab in the navigation bar uncomment line below
@@ -67,7 +67,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/tutorial-docusaurus/intro',
+                to: '/tutorial-docusaurus/intro',
               },
             ],
           },
@@ -97,7 +97,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/e-PSHAD/pad-doc',
               },
             ],
           },
