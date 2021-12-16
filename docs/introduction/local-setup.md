@@ -4,6 +4,8 @@ slug: /
 ---
 # Local Setup
 
+## TEST DEPLOYMENT GITHUB ACTIONS
+
 ## Principe
 On va utiliser WSL, une intégration Linux directement sous Windows, pour installer et gérer les fichiers.
 
