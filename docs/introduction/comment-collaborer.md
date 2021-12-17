@@ -91,6 +91,7 @@ sidebar_position: 2
 
 ![docs](/img/tutorial-how-to-collaborate/create-content.png)
 
+
 6. En bas de l'écran, **donnez un titre/description à la modification** et cliquez sur le bouton `Commit new file`.
 7. Votre site est prêt **[ici](https://e-pshad.github.io/pad-doc/)** !
 
