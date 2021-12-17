@@ -66,7 +66,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tutorial Docusaurus',
                 to: '/tutorial-docusaurus/intro',
               },
             ],
@@ -75,28 +75,28 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Stack Overflow Docusaurus',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              // {
+              //   label: 'Discord',
+              //   href: 'https://discordapp.com/invite/docusaurus',
+              // },
+              // {
+              //   label: 'Twitter',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
             ],
           },
           {
             title: 'More',
             items: [
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
+                label: 'GitHub Pad-doc',
                 href: 'https://github.com/e-PSHAD/pad-doc',
               },
             ],
