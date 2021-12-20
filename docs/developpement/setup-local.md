@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
-# Setup Local
+# Environnement local
 
 ## Principe
 On va utiliser WSL, une intégration Linux directement sous Windows, pour installer et gérer les fichiers.
@@ -24,7 +24,7 @@ wsl --install -d Ubuntu
 wsl -s Ubuntu
 ```
 :::danger Attention
-Activer l'intégration Ubuntu dans les paramètres Docker Desktop (pour que la CLI docker puisse marcher sous Ubuntu). Voir : https://moodle.org/mod/forum/discuss.php?d=420197 
+Activer l'intégration Ubuntu dans les paramètres Docker Desktop (pour que la CLI docker puisse marcher sous Ubuntu). Voir : https://moodle.org/mod/forum/discuss.php?d=420197
 :::
 :::tip Optionnel
 Installation de Windows terminal : https://docs.microsoft.com/en-us/windows/terminal/
@@ -59,7 +59,7 @@ Lancement des services **Moodle sous Docker**
 export MOODLE_DOCKER_WWWROOT=/home/<<<<YOUR DIR>>>>/moodle
 export MOODLE_DOCKER_DB=mysql
 cp config.docker-template.php $MOODLE_DOCKER_WWWROOT/config.php
-bin/moodle-docker-compose up -d  
+bin/moodle-docker-compose up -d
 ```
 
 Installation de Moodle : visiter le site [http://localhost:8000](http://localhost:8000) pour lancer/finaliser l'installation (check, installation des modules, config admin...) - voir ici sinon https://docs.moodle.org/311/en/Installing_Moodle#Start_Moodle_install
