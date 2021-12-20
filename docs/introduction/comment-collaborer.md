@@ -4,7 +4,7 @@ slug: /
 ---
 # Comment collaborer ?
 
-## Depuis la terminal WSL
+## Depuis le terminal WSL
 
 :::info INFO
 Avant de commencer, n'oubliez pas de suivre les instructions d'installation **[README.md](https://github.com/e-PSHAD/pad-doc)**.
@@ -27,9 +27,9 @@ Avant de commencer, n'oubliez pas de suivre les instructions d'installation **[R
 Ne donnez pas un numéro qui a déjà été attribué.
 :::
 
-5. **La catégorie est prête !** Il apparaîtra dans la barre latérale une fois que vous aurez ajouté un onglet.
+5. **La catégorie est prête !** Il apparaîtra dans la barre latérale une fois que vous aurez ajouté une page.
 
-### Comment créer un nouvel onglet ?
+### Comment créer une nouvelle page ?
 
 1. **Créez un nouveau fichier `md`** dans le groupe en question `/docs/introduction/votre-nouveau-fichier.md`.
 2. **Ajoutez le contenu** suivant en haut du document et spécifiez sa position.
@@ -38,7 +38,7 @@ Ne donnez pas un numéro qui a déjà été attribué.
 sidebar_position: 2
 ---
 ```
-3. Vous pouvez maintenant compléter le nouvel onglet en utilisant **[Markdown Features](https://docusaurus.io/docs/next/markdown-features)**.
+3. Vous pouvez maintenant compléter la page en utilisant le format **[Markdown](https://docusaurus.io/docs/next/markdown-features)**.
 
 ## Depuis GitHub
 
@@ -70,10 +70,10 @@ Respectez la nomenclature suivante `my-new-category`.
 Ne donnez pas un numéro qui a déjà été attribué.
 :::
 7. En bas de l'écran, **donnez un titre/description à la modification** et cliquez sur le bouton `Commit new file`.
-8. **La catégorie est prête !** Il apparaîtra dans la barre latérale une fois que vous aurez ajouté un onglet.
+8. **La catégorie est prête !** Il apparaîtra dans la barre latérale une fois que vous aurez ajouté une page.
 
 
-### Comment créer un nouvel onglet ?
+### Comment créer une nouvelle page ?
 
 1. Placez-vous dans la catégorie dans laquelle vous souhaitez créer le contenu. Par exemple, `pad-doc/docs/new-folder/`.
 2. Cliquez sur `Add a file`et selectionnez `Create a new file`.
