@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'e-PSHAD', // Usually your GitHub org/user name.
-  projectName: 'pad-doc', // Usually your repo name.
+  organizationName: 'e-PSHAD',
+  projectName: 'pad-doc',
 
   presets: [
     [
@@ -23,9 +23,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           routeBasePath: '/',
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/e-PSHAD/pad-doc/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -44,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'PAD+ Documentation',
+        title: 'PAD+ Documentation technique',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -63,6 +62,15 @@ const config = {
         style: 'dark',
         links: [
           {
+            title: 'Sources',
+            items: [
+              {
+                label: 'GitHub Pad-doc',
+                href: 'https://github.com/e-PSHAD/pad-doc',
+              },
+            ],
+          },
+          {
             title: 'Docs',
             items: [
               {
@@ -72,37 +80,16 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Communauté',
             items: [
               {
                 label: 'Stack Overflow Docusaurus',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              // {
-              //   label: 'Twitter',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-              {
-                label: 'GitHub Pad-doc',
-                href: 'https://github.com/e-PSHAD/pad-doc',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} e-PSHAD. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

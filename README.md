@@ -1,9 +1,37 @@
-## PAD+ 🚀🚀 Technical documentation 🚀🚀
+# PAD+ 🚀🚀 Technical Documentation 🚀🚀
 
-[Pad-doc](https://e-pshad.github.io/pad-doc/) contains the full technical documentation of the [PAD+ project](https://github.com/e-PSHAD/PAD).
+This repository holds sources for the [technical documentation](https://e-pshad.github.io/pad-doc/) of the PAD+ project.
 
+Other repositories :
+ - [PAD+ sources](https://github.com/e-PSHAD/PAD): Moodle fork customized for PAD+
+ - [PAD+ infrastructure](https://github.com/e-PSHAD/pad-infra): technical scripts to help deploy a PAD+ infrastructure
 
-### 1. Technical requirements (WSL)
+## Editing the Documentation
+
+Documentation pages are stored as files in the `docs` folder and subfolders (for categories). They use the [Markdown format](https://docusaurus.io/docs/next/markdown-features) and can be edited in any text editor.
+
+You can either:
+- [edit a file directly through GitHub(https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)]
+- or clone the repository locally, edit it, then commit and push your changes
+
+```
+git clone https://github.com/e-PSHAD/pad-doc
+```
+
+Once changes have been made with your favorite text editor:
+```
+git add .
+git commit -m "your message"
+git push origin main
+```
+
+The repository is configured to update the [doc website](https://e-pshad.github.io/pad-doc/) on main push. Specifically, the [deploy workflow](https://github.com/e-PSHAD/pad-doc/blob/main/.github/workflows/deploy.yml) is a GitHub Action which will run Docusaurus build task and publish the site on GitHub Pages.
+
+## Local Doc Server for Build/Preview
+
+To build/test the documentation website locally, you should install [Docusaurus tooling](https://docusaurus.io/docs/installation).
+
+### Technical Requirements
 
 Install node.js
 ```
@@ -25,39 +53,17 @@ Install yarn
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
-### 2. Cloning the repository
-
-* Above the list of files, click **Code**.
-* Copy HTTPS address.
-* Open Terminal Git Bash.
-* Change the current working directory to the location where you want the cloned directory.
-* Type git clone, and then paste the URL you copied earlier.
+Install Docusaurus
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ yarn install
 ```
-* Press Enter to create your local clone.
 
-
-### 3. How to collaborate?
+### Start the Local Server
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
 ```
 $ yarn start
 ```
 
-Once changes have been made:
-```
-git add .
-git commit -m "your message"
-git push origin main
-```
-
-### 4. Deploying to GitHub Pages
-
-This action will automatically deploy the site due to GitHub Actions located in the `.github/workflows/` folder
-
-```
-git push origin main
-```
-
-### 5. Start [pad-doc](https://e-pshad.github.io/pad-doc/)! 🚀🚀🚀🚀
+This is just a local preview! Don't forget to commit and push your changes if you want to share!
