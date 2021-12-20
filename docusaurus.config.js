@@ -26,12 +26,6 @@ const config = {
           routeBasePath: '/',
           editUrl: 'https://github.com/e-PSHAD/pad-doc/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
