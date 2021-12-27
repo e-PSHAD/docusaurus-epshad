@@ -1,23 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
-# Déploiement d'une nouvelle instance
+# Déploiement initial
 
-## Prérequis
-
-Voir les prérequis de [Moodle 3.11](https://docs.moodle.org/dev/Moodle_3.11_release_notes#Server_requirements).
-
-En résumé :
-- serveur Apache installé avec module PHP (PHP 7.3.x ou PHP 7.4.x)
-- base de données MariaDB installé, 10.2.29 <= version <= 10.5
-
-> PHP version: minimum PHP 7.3.0. PHP 7.4.x is supported too. PHP 8.0 support is not ready for production yet.
-> - PHP extension sodium is recommended.
-> - PHP setting max_input_vars is recommended to be >= 5000 for PHP 7.x installations.
-
-:::caution MariaDB 10.6
-Moodle utilise une configuration marquée comme dépréciée dans MariaDB 10.6. "The setting ROW_FORMAT=COMPRESSED is deprecated in MariaDB 10.6." - voir https://tracker.moodle.org/browse/MDL-72131
-:::
 
 ## Déploiement Pad+ avec Ansible
 
@@ -68,12 +53,3 @@ ansible-playbook moodle_install.yml -i my-pad.hosts.yml -u root
 :::caution
 L'installation peut prendre plusieurs minutes pour la création de la base de données. Une fois finie, il est recommandé de **sauvegarder le fichier `config.php`** généré (avec le fichier d'inventaire).
 :::
-
-## Etapes post-installation automatique
-
-Il existe d'autres [étapes à vérifier/compléter](https://docs.moodle.org/311/en/Installing_Moodle#Final_configuration) pour après installation, à adapter suivant l'environnement de production :
-
-- mise en place des [backups](https://docs.moodle.org/311/en/Site_backup)
-- mise en place des [systèmes de cache](https://docs.moodle.org/311/en/Caching) et autres [conseils de performance](https://docs.moodle.org/311/en/Performance)
-- conseils de [sécurité](https://docs.moodle.org/311/en/Security)
-- création de [comptes utilisateurs](https://docs.moodle.org/311/en/Managing_accounts)

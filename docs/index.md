@@ -11,7 +11,9 @@ Ce site présente les éléments techniques pour l'installation et le développe
 
 ## Installation
 
-- [Déploiement d'une nouvelle instance PAD+](installation/deploiement) avec prérequis et étapes
+- [Prérequis au déploiement automatique](installation/prerequis)
+- [Déploiement d'une nouvelle instance PAD+](installation/deploiement)
+- [Configuration PAD+ post-déploiement](installation/configuration)
 
 ## Développement
 
