@@ -24,6 +24,13 @@ Il existe d'autres [étapes à vérifier/compléter](https://docs.moodle.org/311
 - mise en place des [systèmes de cache](https://docs.moodle.org/311/en/Caching) et autres [conseils de performance](https://docs.moodle.org/311/en/Performance)
 - conseils de [sécurité](https://docs.moodle.org/311/en/Security)
 
+### Installation du paquetage de langue 'Français'
+
+Le paquetage de langue 'French / Français (fr)' doit être installé depuis l'interface Moodle, sous *Administration > Site administration > Language > Language packs*. Après sélection du paquetage, cliquer sur le bouton *Install selected language pack(s)* :
+
+![Interface d'installation des langues](/img/installation/language_pack_install.png)
+
+La PAD+ est configurée par défaut pour utiliser le français. Le langage par défaut peut être réglé sous *Site administration > Language > Language settings*. Plus d'informations sur la [gestion des paquetages de langue](https://docs.moodle.org/3x/fr/Paquetages_de_langue).
 
 ## Création des comptes utilisateurs et attribution des rôles
 
