@@ -15,6 +15,10 @@ Ce site présente les éléments techniques pour l'installation et le développe
 - [Déploiement d'une nouvelle instance PAD+](installation/deploiement)
 - [Configuration PAD+ post-déploiement](installation/configuration)
 
+## Marque blanche
+
+- [Présentation du site](marqueblanche/presentation) : logo, page d'accueil et contact, pied de page
+
 ## Développement
 
 - Comment [installer un site PAD+ en local](developpement/setup-local) pour le développement ?
