@@ -102,3 +102,38 @@ Vous pouvez maintenant lancer [l'installation PAD+ sous WSL](#installation-local
 
 ### Développement Moodle sous VS Code
 Voir les extensions et instructions pour le [développement Moodle sous VS Code](https://docs.moodle.org/dev/Setting_up_VSCode) (debugger, linter, etc).
+
+L'extension *[Php Sniffer](https://marketplace.visualstudio.com/items?itemName=wongjn.php-sniffer)* demande une configuration spéciale pour utiliser le style de code Moodle :
+
+- [Installer le plugin CodeChecker](https://docs.moodle.org/dev/CodeSniffer#Installing_codechecker) comme plugin local à Moodle
+- [Installer le plugin MoodleCheck](https://github.com/moodlehq/moodle-local_moodlecheck) (optionnel, pour la vérification phpdoc)
+- **Ne pas commiter ces plugins !** Ajouter les chemins `/local/codechecker/` and `/local/moodlecheck/` dans le fichier `.git/info/exclude` (même effet qu'un ajout dans `.gitignore` sans changer la version locale)
+- Suivre les [instructions CodeChecker](https://github.com/moodlehq/moodle-local_codechecker#information) pour configurer le chemin vers l'exécutable `phpcs` sous `local/codechecker/phpcs/bin`, par exemple en changeant le `PATH` sous `~/.profile` ou `.bashrc` :
+
+```shell
+# <PAD_HOME> est le chemin d'accès au code PAD
+PATH="<PAD_HOME>/local/codechecker/phpcs/bin:$PATH"
+```
+
+- Il faut enregistrer le chemin de CodeChecker pour ajouter le standard Moodle dans phpcs  :
+
+```shell
+# enregistrer le standard Moodle dans phpcs
+phpcs --config-set installed_paths <PAD_HOME>/local/codechecker
+# configurer le standard Moodle comme défaut pour phpcs
+phpcs --config-set default_standard moodle
+# vérifier avec
+phpcs -i
+```
+
+- Sous VS Code, configurer *PHP Sniffer* pour utiliser le standard Moodle :
+
+```json
+    "phpSniffer.standard": "moodle",
+```
+
+- si *PHP Sniffer* ne trouve pas phpcs ou le standard moodle, changer dans les settings :
+
+```json
+    "phpSniffer.executablesFolder": "<PAD_HOME>/local/codechecker/phpcs/bin"
+```
