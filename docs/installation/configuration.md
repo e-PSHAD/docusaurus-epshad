@@ -15,6 +15,7 @@ ansible-playbook moosh_config_set.yml -i my-pad.hosts.yml -u root
 
 Cela permet par exemple de configurer le fuseau horaire, activer la recherche globale, désactiver des options des menus... Pour identifier un paramètre, voir [l'explication de la configuration automatique](https://github.com/e-PSHAD/pad-infra/blob/main/moosh-config.md).
 
+La configuration automatique change aussi certaines permissions par défaut. Par exemple elle interdit la modification du tableau de bord pour les usagers.
 
 ## Configuration manuelle
 
@@ -46,6 +47,46 @@ $CFG->padcopyright = 'EPNAK 2022';
 ```
 
 Les pages aide et support sont classées comme liens externes. Pour créer des pages internes dans Moodle, voir la section [Création de la page Contact](/marqueblanche/presentation#cr%C3%A9ation-de-la-page-contact). Une fois créée, l'URL de la page peut être récupéré dans la barre du navigateur et copié dans la configuration.
+
+### Configuration du tableau de bord
+
+Les éléments du tableau de bord par défaut doivent être configurés pour tous les utilisateurs de la plateforme avant leur première connexion.
+
+1. Allez dans l'administration à la page *Administration du site / Présentation / **Tableau de bord par défaut**.*
+1. Cliquez sur le bouton "Activer l'édition des blocs".
+1. Cliquez sur l'icône de paramètres d'un bloc pour ouvrir son menu déroulant.
+
+![Option de suppression dans le menu de paramètre d'un bloc](/img/installation/dashboard-deleteblock.png)
+
+4. Sélectionnez l'option "Supprimer le bloc ..." et confirmez la suppression.
+5. Répétez pour chaque bloc à supprimer.
+6. Pour appliquer les changements à tous les usagers déjà existant, cliquez sur **Réinitialiser le tableau de bord de tous les utilisateurs** en haut.
+7. Cliquez sur le bouton "Désactiver l'édition des blocs" pour sortir du mode.
+
+L'objectif de cette étape est de limiter l'information affichée à l'utilisateur pour conserver l'essentiel. En effet le tableau de bord est la page par défaut après connexion de l'utilisateur.
+
+La liste des blocs à enlever est donc :
+
+- Plans de formation (dans la partie principale)
+- Chronologie
+- Fichiers personnels
+- Utilisateurs en ligne
+- Derniers badges
+- Calendrier
+
+La **configuration standard d'un tableau de bord PAD+** contient donc les 3 blocs suivant :
+
+- Cours consultés récemment
+- Vue d'ensemble des cours (tous les cours auxquels il participe en tant que stagiaire, formateur ou autre)
+- Événements à venir (colonne de droite)
+
+![Configuration standard du tableau de bord PAD+ avec 3 blocs](/img/installation/dashboard-pad-default.png)
+
+:::info
+- Le thème PAD+ a été travaillé pour la configuration standard du tableau de bord. L'intégration graphique des blocs non standards peut donc être perfectible.
+- L'étape [configuration automatique](#configuration-automatique) enlève la permission aux utilisateurs de modifier leur propre tableau de bord.
+- Voir la [documentation officielle sur le  tableau de bord](https://docs.moodle.org/3x/fr/Tableau_de_bord).
+:::
 
 ## Création des comptes utilisateurs et attribution des rôles
 
