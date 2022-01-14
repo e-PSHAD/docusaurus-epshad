@@ -65,15 +65,18 @@ Depuis la page d'accueil du site (accessible en cliquant sur le logo en haut à 
 ![Edition de la page Contact](/img/marqueblanche/home-editcontactpage.png)
 
 5. Cliquez sur "Enregistrez et revenir au cours" pour revenir sur la page d'accueil. Le lien vers la nouvelle page Contact apparaît sous le message d'accueil.
+
+![Edition de la page Contact](/img/marqueblanche/home-linkcontactpage.png)
+
 6. Le lien peut alors être copié-collé dans la configuration pour être accessible depuis le [pied de page](#informations-du-pied-de-page).
-7. Vous pouvez cacher le lien sur la page d'accueil en ouvrant le menu "Modifier" à droite et en cliquant sur le bouton "Cacher". Le lien n'apparaîtra pas pour les utilisateurs sans droits d'administration (il reste accessible via le pied de page).
-
-![Cacher le lien de la page Contact](/img/marqueblanche/home-hidecontactpage.png)
-
-8. Quittez le mode édition dans le menu de paramètres de la page.
+7. Quittez le mode édition dans le menu de paramètres de la page d'accueil.
 
 :::info
 La même méthode peut être utilisée pour créer différentes pages avec du contenu statique si besoin, accessibles depuis la page d'accueil.
+:::
+
+:::warning
+Ne cachez pas les pages créées sur la page d'accueil (menu "Modifier" à droite, bouton "Cacher") ! Si la page reste alors accessible pour les administrateurs, elle ne le sera plus pour les autres usagers.
 :::
 
 ## Informations du pied de page
