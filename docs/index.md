@@ -22,6 +22,7 @@ Ce site présente les éléments techniques pour l'installation et le développe
 ## Développement
 
 - Comment [installer un site PAD+ en local](developpement/setup-local) pour le développement ?
+- [Personnalisation de la langue](developpement/custom-lang) : maintenance du paquetage et versioning des chaînes
 
 ## Liste des dépôts
 

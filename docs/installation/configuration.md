@@ -33,6 +33,27 @@ Le paquetage de langue 'French / Français (fr)' doit être installé depuis l'i
 
 La PAD+ est configurée par défaut pour utiliser le français. Le langage par défaut peut être réglé sous *Site administration > Language > Language settings*. Plus d'informations sur la [gestion des paquetages de langue](https://docs.moodle.org/3x/fr/Paquetages_de_langue).
 
+### Installation du paquetage de langue personnalisé pour la PAD+
+
+Une fois le paquetage de langue français installé, il reste à importer le paquetage personnalisé avec les termes de la PAD+, qui modifient certains noms (stagiaires, formateurs, séquences...) et corrigent des intitulés pour l'accessibilité.
+
+Avant de commencer, **téléchargez [l'archive du paquetage personnalisé](https://github.com/e-PSHAD/pad-infra/lang/customlang_fr.zip)**. L'installation se fait ensuite dans l'interface *Administration du site / Langue / Personnalisation de la langue*.
+
+1. Choisissez la langue 'Francais (fr)'.
+1. Cliquez sur *Importer des chaînes personnalisées*.
+1. Après chargement du paquetage de langue, cliquez sur *Continuer*.
+1. Sélectionnez ou déposez le fichier d'archive déjà téléchargé *customlang_fr.zip* pour la personnalisation.
+1. Gardez le choix "Créer ou mettre à jour toutes les chaînes..." dans le *Mode d'importation*.
+1. Cliquez sur *Importer le fichier*.
+
+![Interface d'installation du paquetage spécialisé](/img/installation/custom_language_pack_install.png)
+
+7. Après le chargement, cliquez sur *Continuer*.
+1. Cliquez sur *Enregistrer les chaînes dans le paquetage de langue*.
+1. Confirmez l'import en cliquant sur *Continuer*.
+
+L'interface est alors mise à jour avec les chaînes personnalisées.
+
 ### Configuration du tableau de bord
 
 Les éléments du tableau de bord par défaut doivent être configurés pour tous les utilisateurs de la plateforme avant leur première connexion.
