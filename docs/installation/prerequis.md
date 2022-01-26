@@ -38,6 +38,21 @@ max_input_vars = 5000
 Après sauvegarde, il peut être nécessaire de relancer le serveur web, par exemple avec `sudo service apache2 restart`.
 
 
+### Exemple : changement des limites de taille pour le téléversement
+
+Les limites par défaut pour le téléversement de fichiers sont par défaut basses. Il peut être nécessaire de les réhausser pour des fichiers plus volumineux (documents, archives). La documentation Moodle décrit plusieurs façons de [changer la limite de taille des fichiers](https://docs.moodle.org/311/en/File_upload_size).
+
+Une fois Moodle installé, on peut trouver le paramètre *Taille maximale des fichiers déposés* dans la section *Administration du site / Sécurité / Réglages de sécurité du site*. Cependant ce paramètre est plafonné par la configuration de PHP.
+
+En suivant la procédure ci-dessus, il faut modifier deux paramètres dans le fichier de configuration `php.ini`, ici par exemple avec une limite à 50Mo :
+```
+upload_max_filesize = 50M
+post_max_size = 50M
+```
+
+Après sauvegarde, il peut être nécessaire de relancer le serveur web, par exemple avec `sudo service apache2 restart`.
+
+
 ### Sous Debian 9
 
 A tite d'informations, voici la liste des packages installés pour le serveur https://www.eig-epshad.com/. S'agissant d'une **Debian 9**, il y a quelques configurations de dépôts supplémentaires pour obtenir les versions requises de PHP et MariaDB.
