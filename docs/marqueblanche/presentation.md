@@ -7,7 +7,7 @@ Seul un administrateur du site a les droits de faire les modifications ci-dessou
 
 ## Logo du site
 
-1. Cliquez sur `Administration du site/Présentation/Logos`.
+1. Allez sur *Administration du site / Présentation / Logos*.
 2. Glissez votre logo dans l'espace **Logo compact** et enregistrez les modifications.
 
 ![Dépôt d'un logo dans l'administration PAD+](/img/marqueblanche/logo-epnak.png)
@@ -75,13 +75,13 @@ Depuis la page d'accueil du site (accessible en cliquant sur le logo en haut à 
 La même méthode peut être utilisée pour créer différentes pages avec du contenu statique si besoin, accessibles depuis la page d'accueil.
 :::
 
-:::warning
+:::warning Attention
 Ne cachez pas les pages créées sur la page d'accueil (menu "Modifier" à droite, bouton "Cacher") ! Si la page reste alors accessible pour les administrateurs, elle ne le sera plus pour les autres usagers.
 :::
 
 ## Informations du pied de page
 
-Les informations affichées ci-dessous sont configurables dans le pied de page. Il s'agit en grande partie de liens vers des sites externes (aide, support) ou des pages internes (contact, mentions légales, politique de confidentialité) ainsi que du copyright. Un administrateur technique doit faire la [configuration du pied de page](/installation/configuration#configuration-du-pied-de-page) dans la plateforme.
+Les informations du pied de page ci-dessous sont configurables. Il s'agit de liens vers des sites externes (aide, support) ou des pages internes (contact, mentions légales, politique de confidentialité) ainsi que du copyright. La configuration de ces informations est à faire dans *Administration du site / Présentation / Thèmes / PAD+*.
 
 ![Liens du pied de page](/img/marqueblanche/footer.png)
 

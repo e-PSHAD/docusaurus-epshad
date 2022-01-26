@@ -33,21 +33,6 @@ Le paquetage de langue 'French / Français (fr)' doit être installé depuis l'i
 
 La PAD+ est configurée par défaut pour utiliser le français. Le langage par défaut peut être réglé sous *Site administration > Language > Language settings*. Plus d'informations sur la [gestion des paquetages de langue](https://docs.moodle.org/3x/fr/Paquetages_de_langue).
 
-### Configuration du pied de page
-
-Le fichier `config.php` (généré par l'installation initiale) doit être édité pour compléter les liens dans le pied de page :
-
-```php
-$CFG->padaide = 'https://www.crp-epnak-foad.com/';
-$CFG->padsupport = 'https://crp-epnak-pad.tech/';
-$CFG->padcontact = 'https://formation.epnak.org/l-etablissement/';
-$CFG->padmentionslegales = 'https://www.epnak.org/mentions-legales/';
-$CFG->padconfidentialite = 'https://www.epnak.org/privacy-policy/';
-$CFG->padcopyright = 'EPNAK 2022';
-```
-
-Les pages aide et support sont classées comme liens externes. Pour créer des pages internes dans Moodle, voir la section [Création de la page Contact](/marqueblanche/presentation#cr%C3%A9ation-de-la-page-contact). Une fois créée, l'URL de la page peut être récupéré dans la barre du navigateur et copié dans la configuration.
-
 ### Configuration du tableau de bord
 
 Les éléments du tableau de bord par défaut doivent être configurés pour tous les utilisateurs de la plateforme avant leur première connexion.

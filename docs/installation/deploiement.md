@@ -50,6 +50,6 @@ Exécuter le playbook `moodle_install.yml` dans le répertoire `ansible_playbook
 ansible-playbook moodle_install.yml -i my-pad.hosts.yml -u root
 ```
 
-:::caution
+:::caution Durée de l'installation
 L'installation peut prendre plusieurs minutes pour la création de la base de données. Une fois finie, il est recommandé de **sauvegarder le fichier `config.php`** généré (avec le fichier d'inventaire).
 :::
