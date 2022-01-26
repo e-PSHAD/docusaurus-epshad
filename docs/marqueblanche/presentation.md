@@ -5,6 +5,16 @@ sidebar_position: 1
 
 Seul un administrateur du site a les droits de faire les modifications ci-dessous.
 
+## Nom du site
+
+Le nom du site est configuré initialement lors de la phase d'installation. Il peut être changé dans le panneau d'administration.
+
+1. Allez sur *Administration du site / Page d'accueil*.
+1. Vous pouvez modifier le *Nom complet du site* qui apparaît sur la page d'accueil.
+1. Vous pouvez modifier le *Nom abrégé du site* qui est utilisé par exemple dans les onglets du navigateur.
+
+![Edition du nom du site](/img/marqueblanche/nom-site.png)
+
 ## Logo du site
 
 1. Allez sur *Administration du site / Présentation / Logos*.
