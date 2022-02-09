@@ -28,18 +28,19 @@ Le thème PAD+ est prévu pour utiliser seulement le **logo compact**. Si on pla
 
 ## Présentation sur la page d'accueil
 
-Depuis la page d'accueil du site (accessible en cliquant sur le logo en haut à gauche) :
+Depuis la page d'accueil du site :
 
-1. Activez le mode édition dans le menu de paramètres de la page.
+1. Ouvrez la page des réglages en cliquant sur le bouton "Réglages de la page d'accueil".
+2. Cliquez sur "Activer le mode édition".
 
 ![Activation du mode édition sur la page d'accueil](/img/marqueblanche/home-editmode.png)
 
-2. Cliquez sur l'icône pour "Modifier le résumé".
+3. Cliquez sur l'icône pour "Modifier le résumé".
 
 ![Emplacement de l'icône de modification](/img/marqueblanche/home-editcontent.png)
 
-3. Cliquez sur la case "Personnalisé" pour modifier le nom de section (titre du message).
-4. Complétez le résumé avec un message d'accueil.
+4. Cliquez sur la case "Personnalisé" pour modifier le nom de section (titre du message).
+5. Complétez le résumé avec un message d'accueil.
 
 :::info Placement d'images
 Vous pouvez placer des images dans le texte en les déposant directement dans l'éditeur.
@@ -47,8 +48,8 @@ Vous pouvez placer des images dans le texte en les déposant directement dans l'
 
 ![Emplacement de l'icône de modification](/img/marqueblanche/home-content.png)
 
-5. Enregistrez les modifications.
-6. Quittez le mode édition dans le menu de paramètres de la page.
+6. Enregistrez les modifications.
+7. Quittez le mode édition en cliquant sur le bouton "Réglages de la page d'accueil", puis "Quitter le mode édition".
 
 :::info
 Des éléments dynamiques (liste des cours, des catégories, annonces de forum...) sont disponibles via *Administration du site / Page d'accueil*.
@@ -56,30 +57,31 @@ Des éléments dynamiques (liste des cours, des catégories, annonces de forum..
 
 ## Création de la page Contact
 
-Depuis la page d'accueil du site (accessible en cliquant sur le logo en haut à gauche) :
+Depuis la page d'accueil du site :
 
-1. Activez le mode édition dans le menu de paramètres de la page.
+1. Ouvrez la page des réglages en cliquant sur le bouton "Réglages de la page d'accueil".
+2. Cliquez sur "Activer le mode édition".
 
 ![Activation du mode édition sur la page d'accueil](/img/marqueblanche/home-editmode.png)
 
-2. Cliquez sur le bouton pour "Ajouter une activité ou ressource".
+3. Cliquez sur le bouton pour "Ajouter une activité ou ressource".
 
 ![Emplacement du bouton Ajouter une activité ou ressource](/img/marqueblanche/home-addcontent.png)
 
-3. Cliquez sur le bouton "Page" dans la boîte de dialogue (onglet Ressources).
+4. Cliquez sur le bouton "Page" dans la boîte de dialogue (onglet Ressources).
 
 ![Emplacement du bouton "Page"](/img/marqueblanche/home-addpage.png)
 
-4. Dans la nouvelle page en mode édition, complétez le nom et le contenu de la page.
+5. Dans la nouvelle page en mode édition, complétez le nom et le contenu de la page.
 
 ![Edition de la page Contact](/img/marqueblanche/home-editcontactpage.png)
 
-5. Cliquez sur "Enregistrez et revenir au cours" pour revenir sur la page d'accueil. Le lien vers la nouvelle page Contact apparaît sous le message d'accueil.
+6. Cliquez sur "Enregistrez et revenir au cours" pour revenir sur la page d'accueil. Le lien vers la nouvelle page Contact apparaît sous le message d'accueil.
 
 ![Edition de la page Contact](/img/marqueblanche/home-linkcontactpage.png)
 
-6. Le lien peut alors être copié-collé dans la configuration pour être accessible depuis le [pied de page](#informations-du-pied-de-page).
-7. Quittez le mode édition dans le menu de paramètres de la page d'accueil.
+7. Le lien peut alors être copié-collé dans la configuration pour être accessible depuis le [pied de page](#informations-du-pied-de-page).
+8. Quittez le mode édition en cliquant sur le bouton "Réglages de la page d'accueil", puis "Quitter le mode édition".
 
 :::info
 La même méthode peut être utilisée pour créer différentes pages avec du contenu statique si besoin, accessibles depuis la page d'accueil.
