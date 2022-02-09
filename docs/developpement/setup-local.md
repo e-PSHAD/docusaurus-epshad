@@ -60,6 +60,10 @@ Le service `webserver` est customisé pour aider au développement :
 La configuration Docker est largement basée sur le [projet moodle-docker](https://github.com/moodlehq/moodle-docker) en le simplifiant.
 :::
 
+### Configuration sous Docker
+
+Après l'installation initiale, il est recommandé de reproduire la [configuration post-installation d'une instance PAD+](/installation/configuration) afin d'avoir un comportement fidèle en développement. La configuration automatique d'un projet Docker peut se faire aussi avec Ansible, en utilisant le playbook dédié `docker_post_config.yml` et un inventaire local : voir la [démarche Ansible pour Docker](https://github.com/e-PSHAD/pad-infra#configuration-automatique-dune-installation-locale-sous-docker).
+
 
 ## Développement Moodle sous VS Code
 Voir les extensions et instructions pour le [développement Moodle sous VS Code](https://docs.moodle.org/dev/Setting_up_VSCode) (debugger, linter, etc).
