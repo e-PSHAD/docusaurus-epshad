@@ -37,7 +37,7 @@ La PAD+ est configurée par défaut pour utiliser le français. Le langage par d
 
 Une fois le paquetage de langue français installé, il reste à importer le paquetage personnalisé avec les termes de la PAD+, qui modifient certains noms (stagiaires, formateurs, séquences...) et corrigent des intitulés pour l'accessibilité.
 
-Avant de commencer, **téléchargez [l'archive du paquetage personnalisé](https://github.com/e-PSHAD/pad-infra/lang/customlang_fr.zip)**. L'installation se fait ensuite dans l'interface *Administration du site / Langue / Personnalisation de la langue*.
+Avant de commencer, **téléchargez [l'archive du paquetage personnalisé](https://github.com/e-PSHAD/pad-infra/raw/main/lang/customlang_fr.zip)**. L'installation se fait ensuite dans l'interface *Administration du site / Langue / Personnalisation de la langue*.
 
 1. Choisissez la langue 'Francais (fr)'.
 1. Cliquez sur *Importer des chaînes personnalisées*.
