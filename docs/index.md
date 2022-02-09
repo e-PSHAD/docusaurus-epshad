@@ -21,6 +21,10 @@ Ce site présente les éléments techniques pour l'installation et le développe
 - [Présentation du site](marqueblanche/presentation) : nom, logo, page d'accueil et contact, pied de page
 - [Couleurs du thème](marqueblanche/couleurs) : choix des couleurs configurables dans le thème
 
+## Organisation et permissions
+
+Cette section explique les [principes d'organisation du contenu d'un site PAD+](organisation/contenu) : contraintes techniques, conventions d'usage à décider, rôles et permissions des usagers.
+
 ## Développement
 
 - Comment [installer un site PAD+ en local](developpement/setup-local) pour le développement ?
