@@ -69,7 +69,15 @@ const config = {
             items: [
               {
                 label: 'Tutorial Docusaurus',
-                to: '/tutorial-docusaurus/intro',
+                href: 'https://tutorial.docusaurus.io/docs/intro',
+              },
+              {
+                label: 'Markdown',
+                href: 'https://docusaurus.io/docs/markdown-features',
+              },
+              {
+                label: 'Docusaurus',
+                href: 'https://docusaurus.io/docs',
               },
             ],
           },

@@ -1,9 +1,10 @@
 ---
 sidebar_position: 1
 slug: /
+sidebar_label: Accueil
 ---
 
-# Documentation technique
+# Documentation technique PAD+
 
 Ce site présente les éléments techniques pour l'installation et le développement d'un site PAD+.
 
