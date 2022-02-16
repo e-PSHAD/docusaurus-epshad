@@ -16,14 +16,15 @@ Ce site présente les éléments techniques pour l'installation et le développe
 - [Déploiement d'une nouvelle instance PAD+](installation/deploiement)
 - [Configuration PAD+ post-déploiement](installation/configuration)
 
+## Organisation et données
+
+- [Organisation et permissions](organisation/contenu) : principes d'organisation du contenu d'un site PAD+, contraintes et  conventions d'usage, rôles et permissions des usagers
+- [Création et import de données](organisation/donnees) : plusieurs outils pour faciliter la création ou l'import des catégories, séquences et utilisateurs
+
 ## Marque blanche
 
 - [Présentation du site](marqueblanche/presentation) : nom, logo, page d'accueil et contact, pied de page
 - [Couleurs du thème](marqueblanche/couleurs) : choix des couleurs configurables dans le thème
-
-## Organisation et permissions
-
-Cette section explique les [principes d'organisation du contenu d'un site PAD+](organisation/contenu) : contraintes techniques, conventions d'usage à décider, rôles et permissions des usagers.
 
 ## Développement
 
