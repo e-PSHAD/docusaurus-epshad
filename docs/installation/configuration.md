@@ -54,7 +54,7 @@ Avant de commencer, **téléchargez [l'archive du paquetage personnalisé](https
 
 L'interface est alors mise à jour avec les chaînes personnalisées.
 
-### Configuration du tableau de bord
+### Configuration standard du tableau de bord
 
 Les éléments du tableau de bord par défaut doivent être configurés pour tous les utilisateurs de la plateforme avant leur première connexion.
 
@@ -94,10 +94,8 @@ La **configuration standard d'un tableau de bord PAD+** contient donc les 3 bloc
 - Voir la [documentation officielle sur le  tableau de bord](https://docs.moodle.org/3x/fr/Tableau_de_bord).
 :::
 
-## Création des comptes utilisateurs et attribution des rôles
+## Etapes suivantes
 
-Il existe plusieurs méthodes pour [ajouter des utilisateurs sur le site](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)...
+Il y a encore plusieurs étapes pour rendre une instance PAD+ fonctionnelle : vous pouvez consulter la page d'[organisation du contenu](/organisation/contenu) qui explique le modèle PAD+ pour héberger plusieurs sites sur la même instance ; puis la page [Création et import de données](/organisation/donnees) pour faciliter la création ou la migration initiale des données.
 
-Dans un premier temps, après création, il peut être utile de désigner **d'autres comptes comme administrateurs**, en plus de l'administrateur principal créé à l'installation. Cela se fait uniquement via la [page dédiée de l'interface d'administration](https://docs.moodle.org/3x/fr/Administrateur).
-
-D'autres [rôles peuvent être attribués](https://docs.moodle.org/3x/fr/Attribution_des_r%C3%B4les) dans les contextes globaux du site ou des catégories de cours. Il s'agit des rôles [Gestionnaire et Créateur de cours](https://docs.moodle.org/3x/fr/R%C3%B4les_standards). Les rôles formateurs et stagiaires n'ont de sens que dans le contexte d'un cours par exemple. L'attribution de ces rôles est donc différente des administrateurs. Elle peut se faire après création du compte mais plus généralement après inscription à un cours (pour les stagiaires par exemple).
+Vous pouvez aussi voir comment [créer des comptes utilisateurs](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)... Il faudra ensuite procéder à l'[attribution des rôles](organisation/roles) pour ajouter par exemple d'autres administrateurs.

@@ -20,6 +20,7 @@ Ce site présente les éléments techniques pour l'installation et le développe
 
 - [Organisation et permissions](organisation/contenu) : principes d'organisation du contenu d'un site PAD+, contraintes et  conventions d'usage, rôles et permissions des usagers
 - [Création et import de données](organisation/donnees) : plusieurs outils pour faciliter la création ou l'import des catégories, séquences, utilisateurs et rôles
+- [Attribution des rôles](organisation/roles) : procédures manuelles pour l'attribution des rôles utilisateurs à différents niveaux
 
 ## Marque blanche
 

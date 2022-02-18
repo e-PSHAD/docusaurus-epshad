@@ -23,11 +23,6 @@ Les sections intitulées "Votre instance" (encadrés verts) rappellent les point
 
 L'organisation du contenu d'une instance PAD+ est basée sur l'arborescence des catégories de Moodle. Tout le contenu est donc hébergé sous la même arborescence, y compris le catalogue partagé.
 
-> En tant qu'administrateur ou gestionnaire d'instance
-> - Je gère les droits d'accès des professionnels à leur établissement et au catalogue.
-> - J'organise l'arborescence générale des établissements et celle du catalogue partagé en particulier.
-> - J'ai accès à la consultation et à l'édition de toutes les séquences.
-
 ![Organisation hiérarchique du contenu d'une instance PAD+](/img/organisation/organisation-instance.png)
 
 Sous la racine de l'arborescence (catégorie "Niveau supérieur" dans Moodle), on trouve donc les catégories principales de l'instance :
@@ -49,12 +44,7 @@ La permission `moodle/category:viewcourselist` est retirée par défaut à tous 
 
 ## Vue d'une instance PAD+ pour un gestionnaire de site
 
-Le rôle gestionnaire peut aussi être attribué à un usager au niveau d'une catégorie 'site". Il s'agit généralement du rôle attribué aux ingénieurs pédagogiques sur site. Ils ont la capacité d'administrer l'arborescence locale (créer, modifier des catégories, ainsi que les séquences sous ces catégories) et de désigner les professionnels et les stagiaires ayant accès au site.
-
-> En tant que gestionnaire de site
-> - Je peux consulter toutes les séquences dans mon établissement (sans m'inscrire).
-> - Je gère les droits d'accès des professionnels et des stagiaires aux séquences de l'établissement.
-> - Je peux organiser l'arborescence dans mon établissement.
+Le rôle gestionnaire peut aussi être attribué à un usager au niveau d'une catégorie "site". Il s'agit généralement du rôle attribué aux ingénieurs pédagogiques sur site. Ils ont la capacité d'administrer l'arborescence locale (créer, modifier des catégories, ainsi que les séquences sous ces catégories) et de désigner les professionnels et les stagiaires ayant accès au site.
 
 ![Vue d'une instance PAD+ pour un gestionnaire de site](/img/organisation/organisation-gestionnaire-site.png)
 
@@ -72,15 +62,7 @@ Un gestionnaire de site n'a les droits que sur l'arborescence de son site. Par d
 
 ## Vue d'une instance PAD+ pour un professionnel
 
-L'usager professionnel est soit un formateur, soit un accompagnant du domaine MPS(I).
-
-> En tant que professionnel
-> - Je peux consulter toutes les séquences dans mon établissement et dans le catalogue (sans m'inscrire).
-> - Je peux créer une séquence dans l'arborescence de mon établissement.
-> - Je peux inscrire des stagiaires dans mes séquences d'établissement et assurer le suivi des stagiaires.
-> - Je peux copier des séquences entre le catalogue et mon établissement.
-
-Cet usager est défini par deux rôles à des niveaux différents dans la PAD+ :
+L'usager professionnel est soit un formateur, soit un accompagnant du domaine MPS(I). Cet usager est défini par deux rôles à des niveaux différents dans la PAD+ :
 
 - le rôle contributeur ("créateur de cours" dans Moodle) dans un site et dans le catalogue : celui-ci lui permet de parcourir les catégories de son site et du catalogue, de consulter les séquences sans être inscrit, de créer des séquences ;
 - le rôle intervenant pour les séquences qu'il a créé (ou peut éditer) et dont il assure les inscriptions et le suivi des stagiaires ; cela inclut les séquences du catalogue dont il est l'auteur ;
@@ -97,14 +79,7 @@ Cet usager est défini par deux rôles à des niveaux différents dans la PAD+ :
 
 ## Vue d'une instance PAD+ pour un stagiaire
 
-Le stagiaire n'a accès sur la plateforme qu'à ce qui l'intéresse directement : les séquences auxquelles il est inscrit et les séquences de son site en accès libre ou en auto-inscription.
-
-> En tant que stagiaire
-> - Je peux participer aux séquences auxquelles je suis inscrit.
-> - Je peux voir les ateliers de mon établissement et m'inscrire tout seul.
-> - Je ne vois pas les autres séquences.
-
-Ainsi son espace n'est pas occupé par du contenu qui ne le concerne pas.
+Le stagiaire n'a accès sur la plateforme qu'à ce qui l'intéresse directement : les séquences auxquelles il est inscrit et les séquences de son site en accès libre ou en auto-inscription. Ainsi son espace n'est pas occupé par du contenu qui ne le concerne pas.
 
 - Sur son tableau de bord apparaissent les séquences auxquelles il est directement inscrit (par un professionnel ou par auto-inscription).
 - Dans la liste des séquences, il peut parcourir les séquences disponibles en auto-inscription (ou accès libre) et s'inscrire lui-même.
