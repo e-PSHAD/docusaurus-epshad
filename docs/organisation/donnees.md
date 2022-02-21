@@ -40,8 +40,10 @@ Cette section donne des indications sur les scripts Moodle ou commandes [Moosh](
     </categories>
     ```
 
-    :::info Attributs supplémentaires
-    Il est possible d'ajouter d'autres attributs, tels que **description='Lorem ipsum'** ou **idnumber='category-1-1'**, qui correspond au champ "Numéro d'identifiant de catégorie" dans les paramètres de la catégorie. Cet identifiant pourra être utilisé lors de l'import des séquences.
+    :::info Numéro d'identifiant de catégorie
+    Il est possible d'ajouter un attribut **idnumber='category-1-1'**, qui correspond au champ "Numéro d'identifiant de catégorie" dans les paramètres de la catégorie. Cet identifiant pourra être utilisé lors de l'import des séquences à la place du chemin des catégories.
+
+    Il n'est par contre pas possible d'ajouter des descriptions de catégorie par cette méthode.
     :::
 
 2. Placez le fichier dans votre dossier PAD+ puis importez le avec la commande moosh `category-import` :
@@ -56,7 +58,7 @@ Par défaut Moodle crée une catégorie "Divers" ou "Miscellaneous" à l'install
 
 ### Export d'une arborescence existante
 
-Si vous avez déjà une instance Moodle avec une arborescence, vous pouvez en exporter tout ou partie avec la commande `moosh category-export`. L'export au format XML contient par exemple les titres et numéros d'identifiant des catégories et peut être réutilisé pour l'import.
+Si vous avez déjà une instance Moodle avec une arborescence, vous pouvez en exporter tout ou partie avec la commande `moosh category-export`. L'export au format XML contient les titres et numéros d'identifiant des catégories et peut être réutilisé pour l'import.
 
 ```
 # Export de toute l'arborescence des catégories
@@ -97,8 +99,11 @@ Voici un example de procédure :
 Il existe de nombreux [autres champs pour configurer l'import des séquences](https://docs.moodle.org/311/en/Upload_courses#Course_information_fields). Voici quelques détails supplémentaires :
 
 * une colonne **category_idnumber** peut remplacer category_path pour utiliser le numéro d'identifiant des catégories ;
-* format : pour préciser le format de séquence (thématique par défaut), il faut renseigner une colonne **format** avec *topics*, *singleactivity*... **Attention** le champ "type d'activité" n'est pas disponible pour le format "activité unique" - il faut le corriger à la main si besoin (forum par défaut) ; la fonctionnalité d'import en masse ne gère pas toutes les options, contrairement à la [restauration unique d'une séquence](https://docs.moodle.org/311/en/Course_restore) ;
+* format : pour préciser le format de séquence (thématique par défaut), il faut renseigner une colonne **format** avec *topics*, *singleactivity*... **Attention** le champ "type d'activité" n'est pas disponible pour le format "activité unique" - il faut le corriger à la main si besoin (forum par défaut) ;
+* summary : pour préciser le résumé de la séquence ; **attention** il faut après import éditer la séquence pour sauvegarder le résumé avec le format correct (HTML, Markdown, texte brut...)
 * enrolment_[number] : différents champs permettent de configurer les méthodes d'inscription si besoin.
+
+Notez que cette fonctionnalité d'import en masse ne gère pas toutes les options, contrairement à la [restauration unique d'une séquence](https://docs.moodle.org/311/en/Course_restore). En particulier le format du résumé (HTML, Markdown, texte brut), l'image de séquence, le type d'activité unique sont ignorés.
 :::
 
 ## Création des utilisateurs et inscription aux séquences
@@ -146,7 +151,7 @@ Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les u
 
     :::caution Points d'attention
     * category_name : le nom de la catégorie (le nom doit être unique - il s'agit normalement d'une catégorie à la racine) ;
-    * role : le rôle à attribuer dans cette catégorie, soit manager pour un gestionnaire de site, coursecreator pour un professionnel contributeur, student pour un stagiaire ;
+    * role : le rôle à attribuer dans cette catégorie, soit `manager` pour un gestionnaire de site, `coursecreator` pour un professionnel contributeur, `student` pour un stagiaire ;
     * username_[number] : la liste des utilisateurs pour qui attribuer le rôle dans la catégorie ;
     * l'attribution des rôles est idempotent : le script peut donc être joué plusieurs fois.
     :::
@@ -154,7 +159,7 @@ Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les u
 2. Attribuez les rôles (attention au **chemin du fichier csv**) :
 
     ```
-    php theme/padplus/cli/assign_category_roles.php ../../../../donnees/users_categories.csv
+    php theme/padplus/cli/assign_category_roles.php ../../../donnees/users_categories.csv
     ```
 
 
@@ -178,12 +183,12 @@ Les étapes ci-dessus peuvent être enchaînées par un playbook Ansible si tout
     ```
 
     :::caution Nommage du dossier source et chemins des fichiers
-    Lors de l'exécution du playbook, les données sont transférées sur le serveur, à la racine du site, dans un dossier qui porte le **nom terminal du dossier source**. Par exemple si vos données sont dans un dossier local `/PAD/donnees`, les données seront transférées sur le serveur dans un dossier `/var/www/my-pad.org/donnees` (où `/var/www/my-pad.org/` est le dossier du site). Il faut donc choisir un **nom terminal sans collision** avec les sources du site. Le **dossier serveur est supprimé** à la fin du playbook.
+    Lors de l'exécution du playbook, les données sont transférées sur le serveur, à la racine du site, dans un dossier qui porte le **nom terminal du dossier source**. Par exemple si vos données sont dans un dossier local `/PAD/donnees`, les données seront transférées sur le serveur dans un dossier `/var/www/my-pad.org/donnees` (où `/var/www/my-pad.org/` est le dossier du site). Il faut donc choisir un **nom terminal sans collision** avec les sources du site. Le **dossier de données sur le serveur est supprimé** à la fin du playbook.
 
     Vérifiez que le chemin d'accès aux fichiers de sauvegarde est correct dans les **fichiers csv de séquence**. Le chemin est relatif au script Moodle `admin/tool/uploadcourse/cli/uploadcourse.php`, et doit donc commencer par `../../../../` pour remonter à la racine du projet. Dans les exemples ci-dessus, le chemin vers les sauvegardes commence toujours par `../../../../donnees/backup`. On peut aussi utiliser des chemins absolus si connus d'avance.
     :::
 
-2. Dans votre fichier d'inventaire Ansible, rajouter une section `import_data`. Notez qu'il est possible de scinder les descriptions des catégories et séquences en plusieurs fichiers qui seront lus les uns à la suite des autres :
+2. Dans votre fichier d'inventaire Ansible, rajouter une section `import_data`. Notez qu'il est possible de scinder les spécifications des catégories et séquences en plusieurs fichiers qui seront lus les uns à la suite des autres :
 
     ```yaml
     all:
@@ -219,6 +224,7 @@ Les étapes ci-dessus peuvent être enchaînées par un playbook Ansible si tout
 :::info Exécution sélective des tâches
 Il est possible de n'exécuter qu'une partie des tâches d'import avec les [tags Ansibles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_tags.html#selecting-or-skipping-tags-when-you-run-a-playbook). Notez que chaque étape dépend des précédentes :
 
+1. transfer-data : transfert des données d'import sur le serveur
 1. categories : création de l'arborescence des catégories
 1. courses : création de séquences dans l'arborescence
 1. users : création des comptes utilisateurs et inscription aux séquences
@@ -227,15 +233,18 @@ Il est possible de n'exécuter qu'une partie des tâches d'import avec les [tags
 
 Par exemple, pour n'exécuter que la création des catégories puis des séquences :
 
-`ansible-playbook import_data.yml -i my-pad.hosts.yml -u root --tags [categories, courses]`
+`ansible-playbook import_data.yml -i my-pad.hosts.yml -u root --tags categories,courses`
 
-Les données sont envoyées sur le serveur avant que les tâches soient exécutées, puis supprimées. Si on souhaite conserver les données sur le serveur, il suffit d'utiliser la commande :
+Par défaut la première et dernière tâche sont toujours exécutées : transfert des données sur le serveur puis suppression quand les autres tâches sont effectuées.
+
+Si on souhaite ignorer la tâche suppression pour conserver les données sur le serveur, il suffit d'utiliser la commande :
 
 `ansible-playbook import_data.yml -i my-pad.hosts.yml -u root --skip-tags cleanup`
 :::
 
 :::info Tâches optionnelles
 Le playbook définit aussi des tâches qui ne sont pas exécutées par défaut mais à la demande avec des tags :
-- `--tags remove-misc-category` : supprimer la catégorie "Divers" par défaut de Moodle (identifiant 1)
-- `--tags fix-single-activity-page` : forcer le type d'activité "page" pour **toutes les séquences à activité unique** (le type d'activité n'est pas restauré par l'import, ces séquences se retrouvent alors avec une activité "forum" par défaut).
+- `--tags remove-misc-category` : supprimer la catégorie par défaut de Moodle (avec l'identifiant 1, "Divers" ou "Miscellaneous").
+- `--tags force-single-activity-page` : forcer le type d'activité "page" pour **toutes les séquences à activité unique** (le type d'activité n'est pas restauré par l'import, ces séquences se retrouvent alors avec une activité "forum" par défaut).
+- `--tags force-html-format-for-description-and-summary` : forcer le format HTML pour les **descriptions des catégories** et les **résumés des séquences** (ce format n'est pas restauré par l'import).
 :::
