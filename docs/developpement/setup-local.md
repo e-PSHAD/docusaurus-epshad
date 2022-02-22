@@ -64,6 +64,19 @@ La configuration Docker est largement basée sur le [projet moodle-docker](https
 
 Après l'installation initiale, il est recommandé de reproduire la [configuration post-installation d'une instance PAD+](/installation/configuration) afin d'avoir un comportement fidèle en développement. La configuration automatique d'un projet Docker peut se faire aussi avec Ansible, en utilisant le playbook dédié `docker_post_config.yml` et un inventaire local : voir la [démarche Ansible pour Docker](https://github.com/e-PSHAD/pad-infra#configuration-automatique-dune-installation-locale-sous-docker).
 
+### Lancement des tests unitaires sous Docker
+
+La configuration Docker permet aussi de [lancer les tests unitaires dans le conteneur](https://github.com/moodlehq/moodle-docker#use-containers-for-running-phpunit-tests) Moodle webserver.
+
+```shell
+$ docker compose exec webserver /bin/bash
+
+> php admin/tool/phpunit/cli/init.php
+# [..]
+
+> vendor/bin/phpunit theme/padplus/tests/*.php
+# [..]
+```
 
 ## Développement Moodle sous VS Code
 Voir les extensions et instructions pour le [développement Moodle sous VS Code](https://docs.moodle.org/dev/Setting_up_VSCode) (debugger, linter, etc).
