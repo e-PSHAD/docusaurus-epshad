@@ -102,3 +102,7 @@ Pour qu'un stagiaire puisse parcourir une catégorie atelier, il faut qu'elle so
 
 C'est une limite actuelle de Moodle 3.x.
 :::
+
+:::info Menu latéral
+Le [menu latéral peut être configuré](../marqueblanche/presentation#sidebarmenu) pour distinguer les catégories du modèle PAD+.
+:::
