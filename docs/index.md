@@ -24,8 +24,8 @@ Ce site présente les éléments techniques pour l'installation et le développe
 
 ## Marque blanche
 
-- [Présentation du site](marqueblanche/presentation) : nom, logo, page d'accueil et contact, pied de page
-- [Couleurs du thème](marqueblanche/couleurs) : choix des couleurs configurables dans le thème
+- [Présentation du site](marqueblanche/presentation) : nom, logo, couleurs du thème, pied de page, ...
+- [Page d'accueil et pages statiques](marqueblanche/pagesstatiques) : édition de la page d'accueil et ajout de pages statiques
 
 ## Développement
 
