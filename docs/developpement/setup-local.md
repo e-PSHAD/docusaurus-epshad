@@ -78,6 +78,24 @@ $ docker compose exec webserver /bin/bash
 # [..]
 ```
 
+### Compilation des modules Javascript
+
+Il faut [installer la chaîne de compilation des modules Javascript](https://docs.moodle.org/dev/Javascript_Modules) pour pouvoir mettre à jour certains modules si besoin. Il s'agit des modules résidant dans les sous-dossiers `amd` uniquement (le Javascript dans les fichiers mustache n'est pas concerné). Pour résumer, la procédure d'installation est la suivante :
+
+- installer nvm puis nodejs
+- installer les packages node
+- installer le package grunt-cli globalement ([d'autres modules peuvent être nécessaires](https://docs.moodle.org/dev/Grunt))
+
+Pour utiliser la compilation incrémentale, le plus simple est d'utiliser la commande `grunt watch` :
+
+```
+nvm use
+grunt watch
+```
+
+Celle-ci détecte les changements sur les fichiers Javascripts à la sauvegarde et regénère les modules Javascripts dans `amd/build` (fichiers `.min.js` et `.min.js.map`). **Les modules générés doivent être commités avec les sources.**
+
+
 ## Développement Moodle sous VS Code
 Voir les extensions et instructions pour le [développement Moodle sous VS Code](https://docs.moodle.org/dev/Setting_up_VSCode) (debugger, linter, etc).
 
