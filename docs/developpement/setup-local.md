@@ -42,7 +42,7 @@ MOODLE_DOCKER_WWWROOT=/home/$HOMEDIR/projets/PAD
 Ceci permet à Docker de trouver le code source dans votre système de fichiers.
 
 4. Lancez Docker compose avec `docker compose up -d` dans le dossier des sources
-5. Allez sur http://localhost:8000 pour tester les services et finaliser l'installation Moodle via l'interface web
+5. Allez sur **http://localhost:8000** pour tester les services et finaliser l'installation Moodle via l'interface web
 
 Pour arrêter les services Docker, tapez `docker compose stop` depuis le dossier des sources. Pour détruire les services (recommencer à zéro), tapez `docker compose down`.
 
@@ -60,7 +60,22 @@ Le service `webserver` est customisé pour aider au développement :
 La configuration Docker est largement basée sur le [projet moodle-docker](https://github.com/moodlehq/moodle-docker) en le simplifiant.
 :::
 
-### Configuration sous Docker
+### Accès aux services sous Docker
+
+**Serveur web** (instance PAD+) : **http://localhost:8000**
+
+**Service mailhog** (interface web pour le mail) : **http://localhost:8025**. Cette interface permet de consulter les mails envoyés par le serveur web en développement, par exemple les notifications de visioconférence.
+
+**Base de données** : pour interagir avec la base de données, il est possible d'utiliser l'outil **[Adminer](https://www.adminer.org/)** (un fichier php à déposer sur le serveur web, accessible par exemple sous http://localhost:8000/adminer.php). Les paramètres de connexion sont à prendre dans l'environnement de votre projet Docker.
+
+- Serveur : `db` (nom du service docker-compose)
+- Utilisateur : `MOODLE_DOCKER_DBUSER` (.env)
+- Mot de passe : `MOODLE_DOCKER_DBPASS` (.env)
+- Base de données : `MOODLE_DOCKER_DBNAME` (.env)
+
+![Interface de connexion à Adminer](/img/developpement/adminer.png)
+
+### Configuration PAD+ sous Docker
 
 Après l'installation initiale, il est recommandé de reproduire la [configuration post-installation d'une instance PAD+](/installation/configuration) afin d'avoir un comportement fidèle en développement. La configuration automatique d'un projet Docker peut se faire aussi avec Ansible, en utilisant le playbook dédié `docker_post_config.yml` et un inventaire local : voir la [démarche Ansible pour Docker](https://github.com/e-PSHAD/pad-infra#configuration-automatique-dune-installation-locale-sous-docker).
 

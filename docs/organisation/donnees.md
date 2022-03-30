@@ -246,5 +246,6 @@ Si on souhaite ignorer la tâche suppression pour conserver les données sur le 
 Le playbook définit aussi des tâches qui ne sont pas exécutées par défaut mais à la demande avec des tags :
 - `--tags remove-misc-category` : supprimer la catégorie par défaut de Moodle (avec l'identifiant 1, "Divers" ou "Miscellaneous").
 - `--tags force-single-activity-page` : forcer le type d'activité "page" pour **toutes les séquences à activité unique** (le type d'activité n'est pas restauré par l'import, ces séquences se retrouvent alors avec une activité "forum" par défaut).
+- `--tags force-one-page-per-topic` : forcer la mise en page de toutes les séquences à **une séance par page** (format recommandé pour la PAD+)
 - `--tags force-html-format-for-description-and-summary` : forcer le format HTML pour les **descriptions des catégories** et les **résumés des séquences** (ce format n'est pas restauré par l'import).
 :::

@@ -35,7 +35,6 @@ all:
           adminuser: admin # login de l'administrateur principal Moodle
           adminpass: XXX # mot de passe de l'administrateur principal Moodle
           adminemail: XXX # email de l'administrateur principal Moodle
-          upgrade_key: XXX # clé de protection lors des mises à jour Moodle https://docs.moodle.org/311/en/Upgrade_key
         db: # paramètres base de données
           host: XXX # serveur de la base de données
           name: XXX # nom de la base de données
