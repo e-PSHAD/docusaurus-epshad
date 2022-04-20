@@ -57,7 +57,11 @@ La **configuration standard d'un tableau de bord PAD+** contient donc les 3 bloc
 - Vue d'ensemble des cours (tous les cours auxquels il participe en tant que stagiaire, formateur ou autre)
 - Événements à venir (colonne de droite)
 
-![Configuration standard du tableau de bord PAD+ avec 3 blocs](/img/installation/dashboard-pad-default.png)
+![Configuration standard du tableau de bord PAD+ pour un stagiaire](/img/installation/dashboard-pad-default.png)
+
+Si la visioconférence est installée, alors il est aussi possible [d'ajouter le bloc visioconférence](/installation/visioconference#tableau-de-bord) dans le tableau de bord par défaut. Le bloc d'affichera uniquement pour les usagers avec les permissions adéquates, soit les gestionnaires et les professionnels.
+
+![Configuration standard du tableau de bord PAD+ avec la visioconférence](/img/installation/dashboard-visio.png)
 
 :::info
 - Le thème PAD+ a été travaillé pour la configuration standard du tableau de bord. L'intégration graphique des blocs non standards peut donc être perfectible.
@@ -69,4 +73,4 @@ La **configuration standard d'un tableau de bord PAD+** contient donc les 3 bloc
 
 Il y a encore plusieurs étapes pour rendre une instance PAD+ fonctionnelle : vous pouvez consulter la page d'[organisation du contenu](/organisation/contenu) qui explique le modèle PAD+ pour héberger plusieurs sites sur la même instance ; puis la page [Création et import de données](/organisation/donnees) pour faciliter la création ou la migration initiale des données.
 
-Vous pouvez aussi voir comment [créer des comptes utilisateurs](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)... Il faudra ensuite procéder à l'[attribution des rôles](organisation/roles) pour ajouter par exemple d'autres administrateurs.
+Vous pouvez aussi voir comment [créer des comptes utilisateurs](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)... Il faudra ensuite procéder à l'[attribution des rôles](/organisation/roles) pour ajouter par exemple d'autres administrateurs.
