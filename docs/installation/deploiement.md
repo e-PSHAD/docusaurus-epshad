@@ -13,6 +13,7 @@ Les étapes de ce premier déploiement sont définis dans le [playbook moodle_in
 - création d'un dossier `moodledata` (cache, stockage de données) avec les droits de l'utilisateur web (Apache...)
 - récupération d'une [archive tagguée de code PAD+](https://github.com/e-PSHAD/PAD) et extraction dans le répertoire d'installation web du site
 - lancement du script d'installation automatique avec les paramètres configurés (création du config.php, initialisation de la base de données Moodle)
+- installation du [paquetage de langue 'Français'](https://download.moodle.org/langpack/3.11/) et du [paquetage de langue personnalisé pour la PAD+](https://github.com/e-PSHAD/pad-infra/raw/main/lang/)
 - configuration du job cron pour Moodle
 
 Avant d'exécuter le playbook, il faut donc créer un [fichier d'inventaire Ansible](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#intro-inventory) avec la machine cible (serveur web Apache) et la configuration customisée.
