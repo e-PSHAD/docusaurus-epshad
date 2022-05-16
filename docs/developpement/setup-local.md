@@ -89,7 +89,7 @@ $ docker compose exec webserver /bin/bash
 > php admin/tool/phpunit/cli/init.php
 # [..]
 
-> vendor/bin/phpunit theme/padplus/tests/*.php
+> vendor/bin/phpunit -c theme/padplus/padplus_phpunit.xml [--debug]
 # [..]
 ```
 

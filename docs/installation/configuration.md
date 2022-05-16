@@ -7,7 +7,7 @@ La plupart des options de configuration ne deviennent disponibles qu'une fois l'
 
 ## Configuration automatique
 
-La configuration automatique standard de la PAD+ est décrite dans le [fichier pad_config_vars.yml](https://github.com/e-PSHAD/pad-infra/blob/main/ansible-playbooks/vars/pad_config_vars.yml). Ce fichier est exploité par le [playbook Ansible moosh_config_set.yml](https://github.com/e-PSHAD/pad-infra/blob/main/ansible-playbooks/moosh_config_set.yml) pour configurer le serveur Moodle à distance avec l'outil [Moosh](https://moosh-online.com/) (installé automatiquement par le playbook). Il faut aussi utiliser le fichier d'inventaire créé pour le déploiement (e.g. `my-pad.hosts.yml`).
+La configuration automatique standard de la PAD+ est décrite dans le [fichier pad_config_vars.yml](https://github.com/e-PSHAD/pad-infra/blob/main/ansible-playbooks/vars/pad_config_vars.yml). Ce fichier est exploité par le [playbook Ansible moosh_config_set.yml](https://github.com/e-PSHAD/pad-infra/blob/main/ansible-playbooks/moosh_config_set.yml) pour configurer le serveur Moodle à distance avec l'outil [Moosh](https://moosh-online.com/) (installé automatiquement par le playbook). Il faut utiliser le fichier d'inventaire créé pour le déploiement (e.g. `my-pad.hosts.yml`) pour lancer le playbook :
 
 ```
 ansible-playbook moosh_config_set.yml -i my-pad.hosts.yml -u root
@@ -15,7 +15,7 @@ ansible-playbook moosh_config_set.yml -i my-pad.hosts.yml -u root
 
 Cela permet par exemple de configurer le fuseau horaire, activer la recherche globale, désactiver des options des menus... Pour identifier un paramètre, voir [l'explication de la configuration automatique](https://github.com/e-PSHAD/pad-infra/blob/main/moosh-config.md).
 
-La configuration automatique change aussi certaines permissions par défaut. Par exemple elle interdit la modification du tableau de bord pour les usagers.
+La configuration automatique change aussi certaines permissions par défaut. Par exemple elle interdit la modification du tableau de bord pour les usagers mais surtout elle fixe les [permissions des rôles dans une organisation PAD+](/organisation/contenu).
 
 ## Configuration manuelle
 
@@ -25,43 +25,64 @@ Il existe d'autres [étapes à vérifier/compléter](https://docs.moodle.org/311
 - mise en place des [systèmes de cache](https://docs.moodle.org/311/en/Caching) et autres [conseils de performance](https://docs.moodle.org/311/en/Performance)
 - conseils de [sécurité](https://docs.moodle.org/311/en/Security)
 
-### Configuration standard du tableau de bord
+### Configuration du tableau de bord par défaut
 
-Les éléments du tableau de bord par défaut doivent être configurés pour tous les utilisateurs de la plateforme avant leur première connexion.
+Après connexion, l'usager arrive directement sur son tableau de bord. Il est donc important de configurer le **tableau de bord par défaut** pour ne garder que l'essentiel à afficher. La configuration ci-dessous sera appliquée au tableau de bord de tous les nouveaux utilisateurs (et aux anciens utilisateurs si requis).
+
+La **configuration standard d'un tableau de bord PAD+** contient les 4 blocs suivant :
+
+- PAD+ progression stagiaire (**à ajouter**, visible uniquement pour les stagiaires)
+- Vue d'ensemble des séquences (présent par défaut, toutes les séquences auxquelles il participe en tant que stagiaire, formateur ou autre)
+- Événements à venir (présent par défaut, colonne de droite)
+- PAD+ visioconférence (**à ajouter**, visible uniquement pour les professionels)
+
+Tous les autres blocs par défaut de Moodle sont donc **à enlever**.
+
+Vue en mode édition du tableau de bord par défaut configurée pour la PAD+ :
+![Configuration standard du tableau de bord PAD+](/img/installation/dashboard-config.png)
+
+#### Guide pas-à-pas de configuration du tableau de bord par défaut
 
 1. Allez dans l'administration à la page *Administration du site / Présentation / **Tableau de bord par défaut**.*
 1. Cliquez sur le bouton "Activer l'édition des blocs".
-1. Cliquez sur l'icône de paramètres d'un bloc pour ouvrir son menu déroulant.
+1. Cliquez sur le bouton "Ajouter un bloc" dans le menu latéral.
+1. Choisir le bloc **"PAD+ progression stagiaire"** dans la liste.
 
-![Option de suppression dans le menu de paramètre d'un bloc](/img/installation/dashboard-deleteblock.png)
+![Choix du bloc "PAD+ progression stagiaire" dans la liste d'ajout des blocs](/img/installation/dashboard-addblock.png)
 
-4. Sélectionnez l'option "Supprimer le bloc ..." et confirmez la suppression.
-5. Répétez pour chaque bloc à supprimer.
-6. Pour appliquer les changements à tous les usagers déjà existant, cliquez sur **Réinitialiser le tableau de bord de tous les utilisateurs** en haut.
-7. Cliquez sur le bouton "Désactiver l'édition des blocs" pour sortir du mode.
+5. Le **déplacer en tête de page** en utilisant l'icône "drag and drop" (par défaut, il est ajouté tout en bas de la colonne de droite).
+1. Ajouter aussi le bloc **"PAD+ visioconférence"** [si vous avez la visioconférence](/installation/visioconference).
 
-L'objectif de cette étape est de limiter l'information affichée à l'utilisateur pour conserver l'essentiel. En effet le tableau de bord est la page par défaut après connexion de l'utilisateur.
-
-La liste des blocs à enlever est donc :
+Il faut ensuite enlever tous les blocs ci-dessous, car ils ne font pas partie de la configuration standard.
 
 - Plans de formation (dans la partie principale)
+- Séquences consultées récemment (dans la partie principale)
 - Chronologie
 - Fichiers personnels
 - Utilisateurs en ligne
 - Derniers badges
 - Calendrier
 
-La **configuration standard d'un tableau de bord PAD+** contient donc les 3 blocs suivant :
+7. Cliquez sur l'icône de paramètres d'un bloc pour ouvrir son menu déroulant.
+1. Sélectionnez l'option "Supprimer le bloc ..." et confirmez la suppression.
 
-- Cours consultés récemment
-- Vue d'ensemble des cours (tous les cours auxquels il participe en tant que stagiaire, formateur ou autre)
-- Événements à venir (colonne de droite)
+![Option de suppression dans le menu de paramètre d'un bloc](/img/installation/dashboard-deleteblock.png)
 
-![Configuration standard du tableau de bord PAD+ pour un stagiaire](/img/installation/dashboard-pad-default.png)
+9. Répétez pour chaque bloc à supprimer.
+1. Pour appliquer les changements à tous les usagers déjà existant, cliquez sur **Réinitialiser le tableau de bord de tous les utilisateurs** en haut.
+1. Cliquez sur le bouton "Désactiver l'édition des blocs" pour sortir du mode.
 
-Si la visioconférence est installée, alors il est aussi possible [d'ajouter le bloc visioconférence](/installation/visioconference#tableau-de-bord) dans le tableau de bord par défaut. Le bloc d'affichera uniquement pour les usagers avec les permissions adéquates, soit les gestionnaires et les professionnels.
 
-![Configuration standard du tableau de bord PAD+ avec la visioconférence](/img/installation/dashboard-visio.png)
+#### Vues des tableaux de bord standards
+
+Vue du tableau de bord d'un stagiaire. Celui-ci voit le bloc de progression mais pas le bloc visioconférence.
+
+![Vue du tableau de bord d'un stagiaire](/img/installation/dashboard-student.png)
+
+
+Vue du tableau de bord d'un gestionnaire ou d'un professionnel. Celui-ci voit le bloc visioconférence mais pas le bloc de progression.
+
+![Vue du tableau de bord d'un gestionnaire ou d'un professionnel](/img/installation/dashboard-visio.png)
 
 :::info
 - Le thème PAD+ a été travaillé pour la configuration standard du tableau de bord. L'intégration graphique des blocs non standards peut donc être perfectible.
@@ -72,5 +93,7 @@ Si la visioconférence est installée, alors il est aussi possible [d'ajouter le
 ## Etapes suivantes
 
 Il y a encore plusieurs étapes pour rendre une instance PAD+ fonctionnelle : vous pouvez consulter la page d'[organisation du contenu](/organisation/contenu) qui explique le modèle PAD+ pour héberger plusieurs sites sur la même instance ; puis la page [Création et import de données](/organisation/donnees) pour faciliter la création ou la migration initiale des données.
+
+La page suivante explique les [possibilités d'intégration d'un serveur de visioconférence BigBlueButton](/installation/visioconference) dans la PAD+.
 
 Vous pouvez aussi voir comment [créer des comptes utilisateurs](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)... Il faudra ensuite procéder à l'[attribution des rôles](/organisation/roles) pour ajouter par exemple d'autres administrateurs.
