@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Attribution des rôles
+# Attribution manuelle des rôles
 
 Cette section explique les procédures manuelles pour attribuer des rôles au niveau de l'instance et des catégories aux utilisateurs. Ces procédures s'adressent aux administrateurs et gestionnaires. Elles sont une alternative à la [procédure scriptée d'attribution](donnees#users-categeories).
 

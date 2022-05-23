@@ -25,7 +25,7 @@ Il existe d'autres [étapes à vérifier/compléter](https://docs.moodle.org/311
 - mise en place des [systèmes de cache](https://docs.moodle.org/311/en/Caching) et autres [conseils de performance](https://docs.moodle.org/311/en/Performance)
 - conseils de [sécurité](https://docs.moodle.org/311/en/Security)
 
-### Configuration du tableau de bord par défaut
+### Configuration du tableau de bord par défaut {#configuration-tableau-de-bord}
 
 Après connexion, l'usager arrive directement sur son tableau de bord. Il est donc important de configurer le **tableau de bord par défaut** pour ne garder que l'essentiel à afficher. La configuration ci-dessous sera appliquée au tableau de bord de tous les nouveaux utilisateurs (et aux anciens utilisateurs si requis).
 

@@ -200,7 +200,7 @@ Les autres paramètres de la page affectent uniquement les **activités BigBlueB
 
 ### Tableau de bord
 
-Le bloc **Visioconférence** doit être ajouté au [tableau de bord par défaut](/installation/configuration#configuration-standard-du-tableau-de-bord) pour être disponible.
+Le bloc **Visioconférence** doit être ajouté au [tableau de bord par défaut](/installation/configuration#configuration-tableau-de-bord) pour être disponible.
 
 1. Allez dans l'administration à la page *Administration du site / Présentation / **Tableau de bord par défaut**.*
 1. Cliquez sur le bouton "Activer l'édition des blocs".
@@ -223,6 +223,8 @@ Pour désactiver la possibilité de passer un appel direct sur les pages profils
 
 ![Cacher le bouton d'appel visioconférence sur les pages profils](/img/installation/bbb_videocall_settings.png)
 
+Pour désactiver le bloc de visioconférence, il suffit de le supprimer du tableau de bord par défaut puis de *Réinitialiser le tableau de bord de tous les utilisateurs* (voir ci-dessus).
+
 ## Configuration Greenlight
 
 Si vous choisissez l'installation Greenlight, celui-ci devient le site web par défaut sur votre serveur de visioconférence. Attention, il y a **deux actions très importantes à faire pour sécuriser** l'application !
@@ -230,7 +232,7 @@ Si vous choisissez l'installation Greenlight, celui-ci devient le site web par d
 1. Utilisez un navigateur web pour ouvrir la page d'accueil de Greenlight sur votre serveur de visioconférence.
 1. Connectez-vous en utilisant les [identifiants du compte administrateur](#installation-du-serveur-bigbluebutton) créés par défaut à l'étape 2 de l'installation.
 1. **Changez le mot de passe** du compte administrateur !
-1. Puis allez dans le menu utilisateur (en haut à droite), choix "Organisation", puis "Paramètres du site", enfin **"Paramètres"**?
+1. Puis allez dans le menu utilisateur (en haut à droite), choix "Organisation", puis "Paramètres du site", enfin **"Paramètres"**.
 1. Changez la méthode d'inscription pour **"Rejoindre sur invitation"** ou **"Approuver/Refuser"**. La méthode par défaut "Inscription ouverte" permet à n'importe quel usager sur Internet de s'inscrire et de lancer ses propres visioconférences.
 
 ## Ressources

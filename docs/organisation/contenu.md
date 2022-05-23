@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Organisation et permissions
 
-Cette section décrit les principes d'organisation du contenu d'un site PAD+. Cette organisation (et les rôles et permissions associés) permet d'héberger plusieurs sites (établissements, territoires...) sur la même instance PAD+, ainsi que de créer un catalogue de séquences et de ressources partagées entre professionnels. Cette section fait le point en particulier sur :
+Cette section décrit les principes d'organisation d'une instance PAD+. Cette organisation (et les rôles et permissions associés) permet d'héberger plusieurs sites (établissements, territoires...) sur la même instance PAD+, ainsi que de créer un catalogue de séquences et de ressources partagées entre professionnels. Cette section fait le point en particulier sur :
 
 - ce qui relève de Moodle et du modèle PAD+ générique : une organisation arborescente par catégorie, avec une gestion des droits d'accès par des rôles ;
 - ce qui relève des règles d'usage à décider et gérer pour votre instance : les règles d'organisation, le nombre de niveaux, l'homogénéité entre les catégories voisines, l'attribution des rôles...
