@@ -12,24 +12,25 @@ Ce site présente les éléments pour l'installation, l'organisation et le déve
 
 ### Installation
 
-- [Prérequis au déploiement automatique](installation/prerequis)
 - [Déploiement d'une nouvelle instance PAD+](installation/deploiement)
 - [Configuration PAD+ post-déploiement](installation/configuration)
 - [Installation de la visioconférence BigBlueButton](installation/visioconference)
 
+### Marque blanche
+
+- [Présentation du site](marqueblanche/presentation) : nom, logo, couleurs du thème, pied de page, ...
+
 ## Pour les administrateurs et gestionnaires d'instance (système)
+
+### Marque blanche
+
+- [Page d'accueil et pages statiques](marqueblanche/pagesstatiques) : édition de la page d'accueil et ajout de pages statiques
 
 ### Organisation, données et rôles
 
 - [Organisation et permissions](organisation/contenu) : principes d'organisation d'une instance PAD+, contraintes et  conventions d'usage, rôles et permissions des usagers
 - [Création et import de données](organisation/donnees) : plusieurs outils pour faciliter la création ou l'import des catégories, séquences, utilisateurs et rôles
 - [Attribution des rôles](organisation/roles) : procédures manuelles pour l'attribution des rôles utilisateurs à différents niveaux
-
-### Marque blanche
-
-- [Présentation du site](marqueblanche/presentation) (pour les administrateurs) : nom, logo, couleurs du thème, pied de page, ...
-- [Page d'accueil et pages statiques](marqueblanche/pagesstatiques) : édition de la page d'accueil et ajout de pages statiques
-
 
 ## Pour les développeurs
 
