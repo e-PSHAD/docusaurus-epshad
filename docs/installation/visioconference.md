@@ -44,14 +44,17 @@ Si l'interface BigBlueButton reste identique dans tous les cas, le tableau ci-de
         <tr>
             <th scope="row">Accès des participants</th>
             <td>uniquement pour les inscrits de la séquence, via l'activité ou le calendrier</td>
-            <td>notification sur la plateforme et/ou par email</td>
+            <td>
+                <strong>mode direct</strong> : notification sur la plateforme et/ou par email
+                <br />
+                <strong>mode lien</strong> : partage du lien d'invitation à la charge de l'initiateur</td>
             <td>notification sur la plateforme et/ou par email</td>
             <td>partage du lien d'invitation à la charge de l'initiateur</td>
         </tr>
         <tr>
             <th scope="row">Planification</th>
             <td>possible, dans le calendrier de la séquence</td>
-            <td>via planning extérieur</td>
+            <td>via planning extérieur, possibilité de partager un lien avant</td>
             <td>via planning extérieur</td>
             <td>via planning extérieur, possibilité de partager un lien avant</td>
         </tr>
@@ -72,7 +75,7 @@ Si l'interface BigBlueButton reste identique dans tous les cas, le tableau ci-de
         <tr>
             <th scope="row">Lien d'invitation</th>
             <td>non</td>
-            <td>dans la visio, uniquement pour les usagers PAD+</td>
+            <td>avant et dans la visio, uniquement pour les usagers PAD+</td>
             <td>dans la visio, uniquement pour les usagers PAD+</td>
             <td>avant et dans la visio, ouvert aux participants extérieurs</td>
         </tr>
@@ -209,9 +212,31 @@ Le bloc **Visioconférence** doit être ajouté au [tableau de bord par défaut]
 1. Pour appliquer les changements à tous les usagers déjà existant, cliquez sur **Réinitialiser le tableau de bord de tous les utilisateurs** en haut.
 7. Cliquez sur le bouton "Désactiver l'édition des blocs" pour sortir du mode.
 
-![Configuration standard du tableau de bord PAD+ avec la visioconférence](/img/installation/dashboard-visio.png)
+![Configuration standard du tableau de bord PAD+ avec la visioconférence](/img/installation/dashboard-config.png)
 
 **Rappel :** si le bloc est bien ajouté par défaut à tout le monde, il ne s'affichera que si l'usager a la capacité `block/padplusvideocall:invitevideocall` pour inviter des participants. Celle-ci est affectée aux gestionnaires et professionnels.
+
+### Réglages des notifications par défaut
+
+Moodle gère de nombreux types de notification pour différentes circonstances. La PAD+ définit en particulier deux nouvelles notifications liées à la visioconférence :
+
+- *Notification de visioconférence* : envoyée aux utilisateurs invitées par appel direct (via le bloc ou page profil) à une visioconférence.
+- *Rappel de lien de visioconférence* : envoyée à l'utilisateur quand il demande un lien de visioconférence dans le bloc.
+
+Les utilisateurs ont la possibilité de régler leurs préférences personnelles de notification. Cette section explique comment régler ces notifications par défaut pour tous les utilisateurs. La configuration est disponible sous *Administration du site / Messagerie / **Réglages de notification**.*
+
+![Réglages des notifications par défaut](/img/installation/config-notifications.png)
+
+Chaque notification peut être configurée indépendamment pour le web et par email. Il existe ensuite une distinction entre l'état "en ligne" ou "hors ligne" de l'utilisateur.
+
+- si l'utilisateur a navigué sur la plateforme dans les **5 dernières minutes**, il est considéré *en ligne*. Ce réglage est disponible depuis *Administration du site / Plugins / Blocs / **Utilisateurs en ligne**.*
+- à l'inverse, s'il n'est pas sur la plateforme ou s'il n'a rien fait depuis 5 minutes, il est considéré *hors ligne*.
+
+Ce réglage est donc relativement imprécis quant au statut en ligne ou hors ligne de l'utilisateur. C'est pourquoi les notifications d'appel direct en visioconférence sont activées par défaut "en ligne" et "hors ligne" par web et par email, pour prévenir celui-ci au plus vite. Cela crée cependant des notifications en doublon et il peut être préférable de mieux cibler celle-ci via ce panneau.
+
+:::info Notifications sur mobile
+Les notifications sur application mobile sont possibles si le [site est enregistré dans l'annuaire Moodle](https://docs.moodle.org/311/en/Moodle_app_notifications). Cela dépend aussi de l'[abonnement souscrit pour l'application](https://apps.moodle.com/local/apps/).
+:::
 
 ### Désactiver les fonctionnalités
 
