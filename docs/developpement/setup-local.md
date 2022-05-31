@@ -151,6 +151,28 @@ phpcs -i
     "phpSniffer.executablesFolder": "<PAD_HOME>/local/codechecker/phpcs/bin"
 ```
 
+### Débogage avec Xdebug
+
+[L'extension PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug) permet de lancer des sessions de débogage avec le conteneur Docker Moodle (qui contient l'extension Xdebug). Quand on rajoute une configuration *Listen for Xdebug*, il faut faire attention à quelques paramètres :
+
+- le port est 9003 (pour Xdebug 3)
+- le hostname est localhost
+- le pathMappings doit indiquer le chemin d'accès aux sources de la PAD+ dans votre workspace
+- le paramètre log peut être utile pour déboguer la configuration
+
+```
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            // "log": true,
+            "pathMappings": {
+                "/var/www/html": "${workspaceFolder}/PAD"
+            },
+            "hostname": "localhost"
+        },
+```
 
 ## Environnement Windows WSL
 
