@@ -19,10 +19,17 @@ La configuration automatique change aussi certaines permissions par défaut. Par
 
 ## Configuration manuelle
 
-Il existe d'autres [étapes à vérifier/compléter](https://docs.moodle.org/311/en/Installing_Moodle#Final_configuration) après installation, à adapter suivant l'environnement de production :
+Suivant l'environnement de production, il reste plusieurs options de base à vérifier ou configurer :
 
+- configuration du [serveur de mail sortant](https://docs.moodle.org/311/en/Mail_configuration#Outgoing_mail_configuration) dans *Administration du site / Serveur / (Courriel) / Configuration du courriel sortant*, pour l'envoi des rappels, notifications, etc.
 - mise en place des [backups](https://docs.moodle.org/311/en/Site_backup)
-- mise en place des [systèmes de cache](https://docs.moodle.org/311/en/Caching) et autres [conseils de performance](https://docs.moodle.org/311/en/Performance)
+- gestion des [sessions](https://docs.moodle.org/311/en/Session_handling) dans `config.php` : par défaut dans des fichiers, il est recommandé [d'utiliser un serveur Redis](https://docs.moodle.org/311/en/Session_handling#Redis_session_driver) pour des installations performantes
+- configuration d'un [proxy ou autre option](https://docs.moodle.org/311/en/Installing_Moodle#Final_configuration)
+- configuration du [tableau de bord PAD+ par défaut](#configuration-tableau-de-bord) (ci-dessous)
+
+La documentation Moodle contient de nombreux éléments pour la [gestion d'un site Moodle](https://docs.moodle.org/311/en/Managing_a_Moodle_site). Voici quelques pointeurs pour approfondir le sujet :
+
+- [conseils de performance](https://docs.moodle.org/311/en/Performance), en particulier gestion des [systèmes de cache](https://docs.moodle.org/311/en/Caching)
 - conseils de [sécurité](https://docs.moodle.org/311/en/Security)
 
 ### Configuration du tableau de bord par défaut {#configuration-tableau-de-bord}
