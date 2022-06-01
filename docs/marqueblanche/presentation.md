@@ -32,7 +32,7 @@ Allez sur l'interface *Administration du site / Présentation / Thèmes / PAD+*.
 
 ![Panneau de configuration des couleurs du thème PAD+](/img/marqueblanche/settings-colors.png)
 
-## Informations du pied de page
+## Informations du pied de page {#pied-de-page}
 
 Les informations du pied de page ci-dessous sont configurables. Il s'agit de liens vers des sites externes (aide, support) ou des pages internes (contact, mentions légales, politique de confidentialité) ainsi que du copyright. La configuration de ces informations est à faire dans *Administration du site / Présentation / Thèmes / PAD+*.
 
@@ -42,8 +42,24 @@ Les informations du pied de page ci-dessous sont configurables. Il s'agit de lie
 - "Support" : lien vers la gestion des tickets de support pour les usagers
 - "Contact" : lien vers la page avec différents moyens de contacter les établissements
 - "Mentions légales" : lien vers les informations légales sur la plateforme
-- "Politique de confidentialité" : lien vers les informations de gestion des données sur la plateforme
+- "Politique de confidentialité" : lien vers les informations de gestion et protection des données sur la plateforme
 - "Copyright" : à définir en fonction de l'institution
+
+### Documents juridiques
+
+On distingue plusieurs documents à portée juridique :
+- la **charte d'utilisation** (ou conditions générales d'utilisation) : celle-ci doit être acceptée par l'utilisateur pour pouvoir accéder à la plateforme ;
+- la **politique de confidentialité** / protection des données : l'affichage est obligatoire mais ne demande pas le consentement de l'utilisateur (son consentement à l'utilisation des données personnelles doit avoir été recueilli *avant* l'ouverture du compte sur la plateforme, par exemple lors de l'inscription administrative) ;
+- les **mentions légales** : affichage obligatoire, sans consentement de l'utilisateur.
+
+Une fois ces documents prêts, il faut les mettre en place sur la plateforme :
+
+- **charte d'utilisation** : il est recommandé d'utiliser [l'outil *Politiques* intégré à Moodle](/legal/politiques) pour gérer le consentement des utilisateurs ;
+- une fois la page prête, copier-coller son lien dans la configuration du pied de page ;
+- **politique de confidentialité** : une page statique suffit, soit externe, soit en la [créant via la page d'accueil](/marqueblanche/pagesstatiques#page-statique-contact), ce qui permet de l'intégrer au thème de la plateforme ;
+- une fois la page prête, copier-coller son lien dans la configuration "Politique de confidentialité" du pied de page ;
+- **mentions légales** : une page statique suffit, soit externe, soit en la [créant via la page d'accueil](/marqueblanche/pagesstatiques#page-statique-contact), ce qui permet de l'intégrer au thème de la plateforme ;
+- une fois la page prête, copier-coller son lien dans la configuration "Mentions légales" du pied de page ;
 
 ## Menu latéral {#sidebarmenu}
 

@@ -38,10 +38,10 @@ Vous pouvez placer des images dans le texte en les déposant directement dans l'
 D'autres éléments (liste des cours, des catégories, annonces de forum...) sont disponibles via les *Réglages de la page d'accueil*.
 :::
 
-## Création d'une page statique "Contact"
+## Création d'une page statique "Contact" {#page-statique-contact}
 
 :::info Page statique
-Ceci est un exemple de création de page statique accessible depuis la page d'accueil.
+Ceci est un exemple de création de page statique disponible depuis la page d'accueil.
 :::
 
 Depuis la page d'accueil du site :
@@ -67,7 +67,7 @@ Depuis la page d'accueil du site :
 
 ![Edition de la page Contact](/img/marqueblanche/home-linkcontactpage.png)
 
-7. Le lien peut alors être copié-collé dans la configuration pour être accessible depuis le [pied de page](#informations-du-pied-de-page).
+7. Le lien peut alors être copié-collé dans la configuration pour être disponible depuis le [pied de page](presentation#pied-de-page).
 8. Quittez le mode édition en cliquant sur le bouton "Réglages de la page d'accueil", puis "Quitter le mode édition".
 
 :::warning Attention
