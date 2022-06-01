@@ -37,6 +37,7 @@ Ce site présente les éléments pour l'installation, l'organisation et le déve
 Cette section décrit les outils intégrés à Moodle pour gérer les politiques d'utilisation et le traitement des données pour la RGPD. Il est aussi possible de faire sans et de simplement référencer des documents externes via la [configuration du pied de page](/marqueblanche/presentation#pied-de-page).
 
 - [Gestion des politiques d'utilisation](legal/politiques) : définition des politiques d'utilisation et gestion du consentement
+- [Traitement des données pour la RGPD](legal/rgpd) : traitement des demandes des utilisateurs sur leurs données
 
 ## Pour les développeurs
 
