@@ -18,6 +18,7 @@ Ce site présente les éléments pour l'installation, l'organisation et le déve
 
 ### Marque blanche
 
+- [Document de la marque blanche (PDF)](marqueblanche/ressources/PAD_Marqueblanche_08-06-2022.pdf) : récapitulatif des éléments de la marque blanche et des principes d'accessibilité numérique pour le choix des couleurs
 - [Présentation du site](marqueblanche/presentation) : nom, logo, couleurs du thème, pied de page, documents juridiques...
 
 ## Pour les administrateurs et gestionnaires d'instance (système)

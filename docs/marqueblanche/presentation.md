@@ -5,6 +5,8 @@ sidebar_position: 1
 
 Seul un **administrateur de l'instance** a les droits de faire les modifications ci-dessous via les paramètres d'administration de Moodle.
 
+Le [document de la marque blanche (PDF)](./ressources/PAD_Marqueblanche_08-06-2022.pdf) récapitule tous les éléments de la marque blanche et les principes d'accessibilité numérique applicables. La suite de la page détaille les procédures pour la configuration du thème sur la plateforme.
+
 ## Nom du site
 
 Le nom du site est configuré initialement lors de la phase d'installation. Il peut être changé dans le panneau d'administration.
