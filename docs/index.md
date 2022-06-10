@@ -33,6 +33,8 @@ Ce site présente les éléments pour l'installation, l'organisation et le déve
 - [Création et import de données](organisation/donnees) : plusieurs outils pour faciliter la création ou l'import des catégories, séquences, utilisateurs et rôles
 - [Attribution des rôles](organisation/roles) : procédures manuelles pour l'attribution des rôles utilisateurs à différents niveaux
 
+Le **[Mémento](organisation/memento) est une référence rapide** pour ajouter un nouveau site sur la plateforme et désigner les rôles des utilisateurs.
+
 ## Politiques d'utilisation et protection des données (RGPD)
 
 Cette section décrit les outils intégrés à Moodle pour gérer les politiques d'utilisation et le traitement des données pour la RGPD. Il est aussi possible de faire sans et de simplement référencer des documents externes via la [configuration du pied de page](/marqueblanche/presentation#pied-de-page).

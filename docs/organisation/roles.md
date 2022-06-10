@@ -3,17 +3,17 @@ sidebar_position: 3
 ---
 # Attribution manuelle des rôles
 
-Cette section explique les procédures manuelles pour attribuer des rôles au niveau de l'instance et des catégories aux utilisateurs. Ces procédures s'adressent aux administrateurs et gestionnaires. Elles sont une alternative à la [procédure scriptée d'attribution](donnees#users-categeories).
+Cette section explique les procédures manuelles pour attribuer des rôles au niveau de l'instance et des catégories aux utilisateurs. Ces procédures s'adressent aux administrateurs et gestionnaires. Elles sont une alternative à la [procédure scriptée d'attribution](donnees#users-categories).
 
 
-## Désignation d'un administrateur
+## Désignation d'un administrateur {#administrateur}
 
-La désignation d'un utilisateur comme [administrateur](https://docs.moodle.org/3x/fr/Administrateur) ne peut se faire que via l'interface *Administration du site / Utilisateurs / Permissions / Administrateurs du site*. Un administrateur ne peut être désigné que par un autre administrateur. Pour rappel, un administrateur a **tous les droits sur le site**, y compris celui de modifier des options techniques. C'est donc un rôle réservé à des utilisateurs avertis.
+La désignation d'un utilisateur comme [administrateur](https://docs.moodle.org/3x/fr/Administrateur) ne peut se faire que via l'interface *Administration du site / Utilisateurs / (Permissions) / Administrateurs du site*. Un administrateur ne peut être désigné que par un autre administrateur. Pour rappel, un administrateur a **tous les droits sur le site**, y compris celui de modifier des options techniques. C'est donc un rôle réservé à des utilisateurs avertis.
 
 ![Interface de désignation des administrateurs](/img/organisation/ajout_administrateur.png)
 
 
-## Gestionnaire d'instance
+## Gestionnaire d'instance {#gestionnaire-instance}
 
 Le gestionnaire d'instance a tous les droits pour consulter le site, modifier le contenu, créer des comptes et attribuer des rôles (hors administrateur). Il n'a pas accès aux options techniques contrairement à l'administrateur. C'est donc un rôle réservé à des utilisateurs avertis.
 
@@ -22,7 +22,7 @@ Le gestionnaire d'instance a tous les droits pour consulter le site, modifier le
 > - J'organise l'arborescence générale des sites et celle du catalogue partagé en particulier.
 > - J'ai accès à la consultation et à l'édition de toutes les séquences.
 
-L'attribution se fait dans *Administration du site / Utilisateurs / Permissions / Attribution des rôles système*.
+L'attribution se fait dans *Administration du site / Utilisateurs / (Permissions) / Attribution des rôles système*.
 
 - Cliquez sur le rôle **Gestionnaire**
 - Recherchez et ajoutez l'utilisateur dans la liste des gestionnaires.
@@ -99,6 +99,9 @@ Si besoin, un gestionnaire peut procéder aux mêmes inscriptions qu'un interven
 
 ![Interface d'inscription d'un intervenant ou stagiaire dans une séquence](/img/organisation/ajout_intervenant.png)
 
+:::info Je ne vois pas l'intervenant dans la liste des participants ?
+Il arrive qu'un intervenant n'apparaisse pas dans la liste de base des participants. C'est le cas par exemple après une copie de séquence. Dans ce cas, vous le verrez via le menu d'actions des participants, au choix "Autres utilisateurs".
+:::
 
 ## Stagiaire
 

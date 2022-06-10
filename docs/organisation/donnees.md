@@ -106,7 +106,7 @@ Il existe de nombreux [autres champs pour configurer l'import des séquences](ht
 Notez que cette fonctionnalité d'import en masse ne gère pas toutes les options, contrairement à la [restauration unique d'une séquence](https://docs.moodle.org/311/en/Course_restore). En particulier le format du résumé (HTML, Markdown, texte brut), l'image de séquence, le type d'activité unique sont ignorés.
 :::
 
-## Création des utilisateurs et inscription aux séquences
+## Création des utilisateurs et inscription aux séquences {#users-register}
 
 Moodle fournit une [fonctionnalité pour créer des utilisateurs](https://docs.moodle.org/311/en/Upload_users). Cette fonctionnalité peut aussi les inscrire automatiquement à des séquences. Cette fonctionnalité est accessible via l'interface ou via la ligne de commande.
 
@@ -136,7 +136,7 @@ Il existe de nombreux [autres champs pour la création des utilisateurs](https:/
 :::
 
 
-## Attribution des rôles utilisateurs dans les catégories {#users-categeories}
+## Attribution des rôles utilisateurs dans les catégories {#users-categories}
 
 Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les utilisateurs se voient affecter les rôles adéquats dans les catégories concernées. Si cela est possible par des procédures manuelles dans l'interface, le script `assign_category_roles.php` permet d'attribuer ses rôles à partir d'un fichier `.csv`.
 
