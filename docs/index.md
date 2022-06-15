@@ -10,6 +10,8 @@ Ce site présente les éléments pour l'installation, l'organisation et le déve
 
 ## Pour les administrateurs
 
+La page **[Survol d'une instance PAD+](survol)** donne un aperçu d'une infrastructure type PAD+ ainsi qu'une check-list pour l'installation et la mise en place opérationnelle de la plateforme.
+
 ### Installation
 
 - [Déploiement d'une nouvelle instance PAD+](installation/deploiement)
