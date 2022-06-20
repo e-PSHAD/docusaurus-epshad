@@ -25,7 +25,7 @@ Depuis la page d'accueil du site :
 4. Cliquez sur la case "Personnalisé" pour modifier le nom de section (titre du message).
 5. Complétez le résumé avec un message d'accueil.
 
-:::info Placement d'images
+:::success Placement d'images
 Vous pouvez placer des images dans le texte en les déposant directement dans l'éditeur.
 :::
 
@@ -34,7 +34,7 @@ Vous pouvez placer des images dans le texte en les déposant directement dans l'
 6. Enregistrez les modifications.
 7. Quittez le mode édition en cliquant sur le bouton "Réglages de la page d'accueil", puis "Quitter le mode édition".
 
-:::info
+:::success Éléments supplémentaires
 D'autres éléments (liste des cours, des catégories, annonces de forum...) sont disponibles via les *Réglages de la page d'accueil*.
 :::
 

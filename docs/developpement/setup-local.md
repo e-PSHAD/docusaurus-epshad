@@ -11,7 +11,7 @@ Sous Windows, il est vivement recommandé de faire cette **[installation sous WS
 
 ### Récupération du dépôt de code
 
-Récupérez le dépôt de code de la PAD+ dans un répertoire projets, `/home/$HOMEDIR/projets` par exemple. Cela créera le dépôt `/home/$HOMEDIR/projets/PAD` en local.
+Récupérez le dépôt de code de la PAD+ dans un répertoire projets, `$HOME/projets` par exemple. Cela créera le dépôt `$HOME/projets/PAD` en local.
 
 ```
 git clone https://github.com/e-PSHAD/PAD.git
@@ -36,7 +36,7 @@ Les étapes :
 3. Editez le fichier `.env` pour configurer la variable `MOODLE_DOCKER_WWWROOT` (les autres variables peuvent être laissées par défaut)
 
 ```
-MOODLE_DOCKER_WWWROOT=/home/$HOMEDIR/projets/PAD
+MOODLE_DOCKER_WWWROOT=$HOME/projets/PAD
 ```
 
 Ceci permet à Docker de trouver le code source dans votre système de fichiers.
@@ -44,7 +44,7 @@ Ceci permet à Docker de trouver le code source dans votre système de fichiers.
 4. Lancez Docker compose avec `docker compose up -d` dans le dossier des sources
 5. Allez sur **http://localhost:8000** pour tester les services et finaliser l'installation Moodle via l'interface web
 
-Pour arrêter les services Docker, tapez `docker compose stop` depuis le dossier des sources. Pour détruire les services (recommencer à zéro), tapez `docker compose down`.
+Pour arrêter les services Docker, tapez `docker compose stop` depuis le dossier des sources. Pour détruire les services (recommencer à zéro), tapez `docker compose down`. Pour ouvrir une ligne de commande sur le serveur web (par exemple), tapez `docker compose exec webserver /bin/bash`.
 
 :::caution Droits des fichiers
 Comme la configuration Docker utilise le système de fichiers local dans son environnement, cela peut poser des **problèmes de droits d'accès** si vous utilisez l'UI Moodle pour installer des fichiers en local (plugins, thèmes...). Par exemple, pour permettre à n'importe quel usager d'écrire dans le dossier thème, on peut utiliser `chmod a+w theme`.

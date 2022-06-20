@@ -3,13 +3,13 @@ sidebar_position: 2
 ---
 # Déploiement initial
 
-La PAD+ s'installe comme une [instance Moodle normale](https://docs.moodle.org/400/en/Installing_Moodle). Il est **recommandé d'utiliser les playbooks Ansible** fournis dans le dépôt [pad-infra](https://github.com/e-PSHAD/pad-infra), car ils facilitent le déploiement et surtout la configuration de Moodle propre à la PAD+.
+La PAD+ s'installe comme une [instance Moodle normale (MoodleDoc)](https://docs.moodle.org/400/en/Installing_Moodle). Il est **recommandé d'utiliser les playbooks Ansible** fournis dans le dépôt [pad-infra](https://github.com/e-PSHAD/pad-infra), car ils facilitent le déploiement et surtout la configuration de Moodle propre à la PAD+.
 
 [L'installation de la visioconférence BigBlueButton](/installation/visioconference) est traité sur une page dédiée.
 
 ## Prérequis au déploiement PAD+
 
-Voir les prérequis de [Moodle 3.11](https://docs.moodle.org/dev/Moodle_3.11_release_notes#Server_requirements).
+Voir les prérequis de [Moodle 3.11 (MoodleDoc)](https://docs.moodle.org/dev/Moodle_3.11_release_notes#Server_requirements).
 
 En résumé :
 - serveur Apache installé avec module PHP (PHP 7.3.x ou PHP 7.4.x)
@@ -30,7 +30,7 @@ Moodle utilise une configuration marquée comme dépréciée dans MariaDB 10.6. 
 
 ### Exemple : changement de max_input_vars
 
-Il est recommandé de [passer le réglage PHP max_input_vars à 5000](https://docs.moodle.org/3x/fr/Environnement_-_max_input_vars) (au lieu de 1000 par défaut). Cela se fait en éditant le fichier de configuration `php.ini` (voir *Administration du site > Serveur > Info PHP* pour la localisation du fichier sur le serveur).
+Il est recommandé de [passer le réglage PHP max_input_vars à 5000 (MoodleDoc)](https://docs.moodle.org/3x/fr/Environnement_-_max_input_vars) (au lieu de 1000 par défaut). Cela se fait en éditant le fichier de configuration `php.ini` (voir *Administration du site > Serveur > Info PHP* pour la localisation du fichier sur le serveur).
 
 Par exemple avec un serveur Debian + Apache, on peut le trouver sous `/etc/php/7.4/apache2/php.ini`.
 
@@ -44,7 +44,7 @@ Après sauvegarde, il peut être nécessaire de relancer le serveur web, par exe
 
 ### Exemple : changement des limites de taille pour le téléversement
 
-Les limites par défaut pour le téléversement de fichiers sont par défaut basses. Il peut être nécessaire de les réhausser pour des fichiers plus volumineux (documents, archives). La documentation Moodle décrit plusieurs façons de [changer la limite de taille des fichiers](https://docs.moodle.org/311/en/File_upload_size).
+Les limites par défaut pour le téléversement de fichiers sont par défaut basses. Il peut être nécessaire de les réhausser pour des fichiers plus volumineux (documents, archives). La documentation Moodle décrit plusieurs façons de [changer la limite de taille des fichiers (MoodleDoc)](https://docs.moodle.org/311/en/File_upload_size).
 
 Une fois Moodle installé, on peut trouver le paramètre *Taille maximale des fichiers déposés* dans la section *Administration du site / Sécurité / Réglages de sécurité du site*. Cependant ce paramètre est plafonné par la configuration de PHP.
 
@@ -59,7 +59,7 @@ Après sauvegarde, il peut être nécessaire de relancer le serveur web, par exe
 
 ### Sous Debian 9
 
-A tite d'informations, voici la liste des packages installés pour le serveur https://www.eig-epshad.com/. S'agissant d'une **Debian 9**, il y a quelques configurations de dépôts supplémentaires pour obtenir les versions requises de PHP et MariaDB.
+A tite d'informations, voici la liste des packages installés pour le serveur démo https://www.eig-epshad.com/. S'agissant d'une **Debian 9**, il y a quelques configurations de dépôts supplémentaires pour obtenir les versions requises de PHP et MariaDB.
 
 
 **Apache2 et PHP 7.4**
@@ -124,7 +124,7 @@ mysql -u root -p
 
 Ansible est un outil de configuration et déploiement automatique avec un minimum de prérequis. Il faut un accès SSH sur les machines cibles. Voir le [guide d'installation Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html). Basiquement cela se fait avec pip (Python 3.8+ sur la machine de contrôle).
 
-Les étapes de ce premier déploiement sont définis dans le [playbook moodle_install](https://github.com/e-PSHAD/pad-infra/blob/main/ansible-playbooks/moodle_install.yml). Le playbook définit les principales étapes d'une [installation Moodle](https://docs.moodle.org/311/en/Installing_Moodle) en s'appuyant sur le script `admin/cli/install.php`. Ce playbook exécute les étapes suivantes :
+Les étapes de ce premier déploiement sont définis dans le [playbook moodle_install](https://github.com/e-PSHAD/pad-infra/blob/main/ansible-playbooks/moodle_install.yml). Le playbook définit les principales étapes d'une [installation Moodle (MoodleDoc)](https://docs.moodle.org/311/en/Installing_Moodle) en s'appuyant sur le script `admin/cli/install.php`. Ce playbook exécute les étapes suivantes :
 
 - création d'un dossier `moodledata` (cache, stockage de données) avec les droits de l'utilisateur web (Apache...)
 - récupération d'une [archive tagguée de code PAD+](https://github.com/e-PSHAD/PAD) et extraction dans le répertoire d'installation web du site
@@ -132,7 +132,7 @@ Les étapes de ce premier déploiement sont définis dans le [playbook moodle_in
 - installation du [paquetage de langue 'Français'](https://download.moodle.org/langpack/3.11/) et du [paquetage de langue personnalisé pour la PAD+](https://github.com/e-PSHAD/pad-infra/raw/main/lang/)
 - configuration du job cron pour Moodle
 
-Avant d'exécuter le playbook, il faut donc créer un [fichier d'inventaire Ansible](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#intro-inventory) avec la machine cible (serveur web Apache) et la configuration customisée.
+Avant d'exécuter le playbook, il faut donc créer un [fichier d'inventaire (Ansible)](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#intro-inventory) avec la machine cible (serveur web Apache) et la configuration customisée.
 
 Exemple de fichier d'inventaire `my-pad.hosts.yml` avec configuration customisée :
 

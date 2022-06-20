@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Présentation du site
+# Présentation
 
 Seul un **administrateur de l'instance** a les droits de faire les modifications ci-dessous via les paramètres d'administration de Moodle.
 

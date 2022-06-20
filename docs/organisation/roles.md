@@ -8,7 +8,7 @@ Cette section explique les procédures manuelles pour attribuer des rôles au ni
 
 ## Désignation d'un administrateur {#administrateur}
 
-La désignation d'un utilisateur comme [administrateur](https://docs.moodle.org/3x/fr/Administrateur) ne peut se faire que via l'interface *Administration du site / Utilisateurs / (Permissions) / Administrateurs du site*. Un administrateur ne peut être désigné que par un autre administrateur. Pour rappel, un administrateur a **tous les droits sur le site**, y compris celui de modifier des options techniques. C'est donc un rôle réservé à des utilisateurs avertis.
+La désignation d'un utilisateur comme [administrateur (MoodleDoc)](https://docs.moodle.org/3x/fr/Administrateur) ne peut se faire que via l'interface *Administration du site / Utilisateurs / (Permissions) / Administrateurs du site*. Un administrateur ne peut être désigné que par un autre administrateur. Pour rappel, un administrateur a **tous les droits sur le site**, y compris celui de modifier des options techniques. C'est donc un rôle réservé à des utilisateurs avertis.
 
 ![Interface de désignation des administrateurs](/img/organisation/ajout_administrateur.png)
 
@@ -130,4 +130,4 @@ Un gestionnaire (de site ou d'instance) doit attribuer le rôle stagiaire dans l
 
 ### Inscription dans une séquence
 
-L'inscription d'un stagiaire dans une séquence peut se faire par un **intervenant de la séquence** ou par un gestionnaire, en utilisant la même procédure que [l'inscription d'un intervenant](#inscription). Moodle propose aussi [plusieurs méthodes d'inscriptions](https://docs.moodle.org/3x/fr/Inscriptions).
+L'inscription d'un stagiaire dans une séquence peut se faire par un **intervenant de la séquence** ou par un gestionnaire, en utilisant la même procédure que [l'inscription d'un intervenant](#inscription). Moodle propose aussi [plusieurs méthodes d'inscriptions (MoodleDoc)](https://docs.moodle.org/3x/fr/Inscriptions).

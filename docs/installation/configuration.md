@@ -21,16 +21,16 @@ La configuration automatique change aussi certaines permissions par défaut. Par
 
 Suivant l'environnement de production, il reste plusieurs options de base à vérifier ou configurer :
 
-- configuration du [serveur de mail sortant](https://docs.moodle.org/311/en/Mail_configuration#Outgoing_mail_configuration) dans *Administration du site / Serveur / (Courriel) / Configuration du courriel sortant*, pour l'envoi des rappels, notifications, etc.
-- mise en place des [backups](https://docs.moodle.org/311/en/Site_backup)
-- gestion des [sessions](https://docs.moodle.org/311/en/Session_handling) dans `config.php` : par défaut dans des fichiers, il est recommandé [d'utiliser un serveur Redis](https://docs.moodle.org/311/en/Session_handling#Redis_session_driver) pour des installations performantes
-- configuration d'un [proxy ou autre option](https://docs.moodle.org/311/en/Installing_Moodle#Final_configuration)
 - configuration du [tableau de bord PAD+ par défaut](#configuration-tableau-de-bord) (ci-dessous)
+- configuration du [serveur de mail sortant (MoodleDoc)](https://docs.moodle.org/311/en/Mail_configuration#Outgoing_mail_configuration) dans *Administration du site / Serveur / (Courriel) / Configuration du courriel sortant*, pour l'envoi des rappels, notifications, etc.
+- mise en place des [backups (MoodleDoc)](https://docs.moodle.org/311/en/Site_backup)
+- gestion des [sessions (MoodleDoc)](https://docs.moodle.org/311/en/Session_handling) dans `config.php` : par défaut dans des fichiers, il est recommandé [d'utiliser un serveur Redis (MoodleDoc)](https://docs.moodle.org/311/en/Session_handling#Redis_session_driver) pour des installations performantes
+- configuration d'un [proxy ou autre option (MoodleDoc)](https://docs.moodle.org/311/en/Installing_Moodle#Final_configuration)
 
-La documentation Moodle contient de nombreux éléments pour la [gestion d'un site Moodle](https://docs.moodle.org/311/en/Managing_a_Moodle_site). Voici quelques pointeurs pour approfondir le sujet :
+La documentation Moodle contient de nombreux éléments pour la [gestion d'un site Moodle (MoodleDoc)](https://docs.moodle.org/311/en/Managing_a_Moodle_site). Voici quelques pointeurs pour approfondir le sujet :
 
-- [conseils de performance](https://docs.moodle.org/311/en/Performance), en particulier gestion des [systèmes de cache](https://docs.moodle.org/311/en/Caching)
-- conseils de [sécurité](https://docs.moodle.org/311/en/Security)
+- [conseils de performance (MoodleDoc)](https://docs.moodle.org/311/en/Performance), en particulier gestion des [systèmes de cache (MoodleDoc)](https://docs.moodle.org/311/en/Caching)
+- conseils de [sécurité (MoodleDoc)](https://docs.moodle.org/311/en/Security)
 
 ### Configuration du tableau de bord par défaut {#configuration-tableau-de-bord}
 
@@ -94,7 +94,7 @@ Vue du tableau de bord d'un gestionnaire ou d'un professionnel. Celui-ci voit le
 :::info
 - Le thème PAD+ a été travaillé pour la configuration standard du tableau de bord. L'intégration graphique des blocs non standards peut donc être perfectible.
 - L'étape [configuration automatique](#configuration-automatique) enlève la permission aux utilisateurs de modifier leur propre tableau de bord.
-- Voir la [documentation officielle sur le  tableau de bord](https://docs.moodle.org/3x/fr/Tableau_de_bord).
+- Voir la [documentation générique sur le  tableau de bord (MoodleDoc)](https://docs.moodle.org/3x/fr/Tableau_de_bord).
 :::
 
 ## Etapes suivantes
@@ -103,4 +103,4 @@ Il y a encore plusieurs étapes pour rendre une instance PAD+ fonctionnelle : vo
 
 La page suivante explique les [possibilités d'intégration d'un serveur de visioconférence BigBlueButton](/installation/visioconference) dans la PAD+.
 
-Vous pouvez aussi voir comment [créer des comptes utilisateurs](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)... Il faudra ensuite procéder à l'[attribution des rôles](/organisation/roles) pour ajouter par exemple d'autres administrateurs.
+Vous pouvez aussi voir comment [créer des comptes utilisateurs (MoodleDoc)](https://docs.moodle.org/311/en/Authentication), via connexion à un annuaire, [enregistrement manuel (MoodleDoc)](https://docs.moodle.org/3x/fr/Cr%C3%A9ation_manuelle_de_comptes), [import d'un fichier CSV (MoodleDoc)](https://docs.moodle.org/3x/fr/Importer_des_utilisateurs)... Il faudra ensuite procéder à [l'attribution des rôles](/organisation/roles) pour ajouter par exemple d'autres administrateurs.

@@ -30,7 +30,7 @@ Pour ajouter un nouveau site, il faut :
 
 Quand l'arborescence minimale d'un site est créée, il faut donner l'accès aux usagers suivant leur rôle : gestionnaire, professionnel ou stagiaire.
 
-:::info Outils
+:::success Outils
 Il existe des outils pour faciliter [la création des nouveaux utilisateurs](./donnees#users-register) et [l'attribution des rôles dans les catégories](./donnees#users-categories).
 :::
 

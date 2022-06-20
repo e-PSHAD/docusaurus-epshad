@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # Personnalisation de la langue
 
-Cette page rappelle brièvement le processus de [personnalisation de la langue dans Moodle](https://docs.moodle.org/3x/fr/Personnalisation_de_la_langue) et explique comment versionner le paquetage et les différences dans le [dépôt pad-infra](https://github.com/e-PSHAD/pad-infra/). Ce paquetage est utilisé pour [les nouveaux déploiements et les mises à jour](../installation/configuration#installation-du-paquetage-de-langue-personnalis%C3%A9-pour-la-pad) des instances PAD+.
+Cette page rappelle brièvement le processus de [personnalisation de la langue dans Moodle (MoodleDoc)](https://docs.moodle.org/3x/fr/Personnalisation_de_la_langue) et explique comment versionner le paquetage et les différences dans le [dépôt pad-infra](https://github.com/e-PSHAD/pad-infra/). Ce paquetage est utilisé pour [les nouveaux déploiements et les mises à jour](../installation/configuration#installation-du-paquetage-de-langue-personnalis%C3%A9-pour-la-pad) des instances PAD+.
 
 ## Interface de personnalisation de la langue
 

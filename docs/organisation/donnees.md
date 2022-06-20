@@ -276,7 +276,7 @@ Si on souhaite ignorer la tâche suppression pour conserver les données sur le 
 `ansible-playbook import_data.yml -i my-pad.hosts.yml -u root --skip-tags cleanup`
 :::
 
-:::info Tâches optionnelles
+:::success Tâches optionnelles
 Le playbook définit aussi des tâches qui ne sont pas exécutées par défaut mais à la demande avec des tags :
 - `--tags remove-misc-category` : supprimer la catégorie par défaut de Moodle (avec l'identifiant 1, "Divers" ou "Miscellaneous").
 - `--tags force-single-activity-page` : forcer le type d'activité "page" pour **toutes les séquences à activité unique** (le type d'activité n'est pas restauré par l'import, ces séquences se retrouvent alors avec une activité "forum" par défaut).
