@@ -72,12 +72,12 @@ Les catégories disponibles pour l'usager (professionnel ou stagiaire) sont affi
 
     ![Menu latéral : exemples d'affichage des catégories avec leurs noms propres à gauche et intitulés PAD+ à droite](/img/marqueblanche/menus.png)
 
-Le professionnel a accès à *toutes les séquences* et aux *ateliers collectifs* **sur son site (établissement, territoire)** mais ignore les autres sites. Les *ressources partagées* constituent une catégorie à part puisqu'elles permettent d'échanger avec les professionnels des autres sites. Le stagiaire a simplement accès aux *ateliers collectifs* **sur site**. Cette configuration PAD+ du menu latéral se fait dans l'interface *Administration du site / Présentation / Thèmes / PAD+* :
+Le professionnel a accès à *toutes les séquences* et aux *ateliers complémentaires* **sur son site (établissement, territoire)** mais ignore les autres sites. Les *ressources professionnelles* constituent une catégorie à part puisqu'elles permettent d'échanger avec les professionnels des autres sites. Le stagiaire a simplement accès aux *ateliers complémentaires* **sur site**. Cette configuration PAD+ du menu latéral se fait dans l'interface *Administration du site / Présentation / Thèmes / PAD+* :
 
 ![Paramètres d'affichage des catégories dans le menu latéral](/img/marqueblanche/menu-settings.png)
 
-- Le paramètre "les ateliers collectifs" permet de sélectionner toutes les catégories de l'instance qui seront désignées sous cet intitulé.
-- Le paramètre "ressources partagées" permet de sélectionner la catégorie qui apparaîtra sous cet intitulé dans le groupe en bas du menu latéral.
+- Le paramètre "ateliers complémentaires" permet de sélectionner toutes les catégories de l'instance qui seront désignées sous cet intitulé.
+- Le paramètre "ressources professionnelles" permet de sélectionner la catégorie qui apparaîtra sous cet intitulé dans le groupe en bas du menu latéral.
 - Le paramètre "toutes les séquences" donne cet intitulé à la première catégorie de l'usager (dans l'ordre) qui ne correspondrait pas aux critères ci-dessus. Il s'agit en quelque sorte de la catégorie par défaut pour le professionnel.
 
 :::info Règles d'affichage

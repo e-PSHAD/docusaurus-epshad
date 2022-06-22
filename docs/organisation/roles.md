@@ -18,8 +18,8 @@ La désignation d'un utilisateur comme [administrateur (MoodleDoc)](https://docs
 Le gestionnaire d'instance a tous les droits pour consulter le site, modifier le contenu, créer des comptes et attribuer des rôles (hors administrateur). Il n'a pas accès aux options techniques contrairement à l'administrateur. C'est donc un rôle réservé à des utilisateurs avertis.
 
 > En tant qu'administrateur ou gestionnaire d'instance
-> - Je gère les droits d'accès des professionnels à leur site et au catalogue.
-> - J'organise l'arborescence générale des sites et celle du catalogue partagé en particulier.
+> - Je gère les droits d'accès des professionnels à leur site et aux ressources professionnelles.
+> - J'organise l'arborescence générale des sites et celle des ressources professionnelles en particulier.
 > - J'ai accès à la consultation et à l'édition de toutes les séquences.
 
 L'attribution se fait dans *Administration du site / Utilisateurs / (Permissions) / Attribution des rôles système*.
@@ -30,7 +30,7 @@ L'attribution se fait dans *Administration du site / Utilisateurs / (Permissions
     ![Interface d'attribution du rôle gestionnaire d'instance](/img/organisation/ajout_gestionnaire_instance.png)
 
 :::caution Rôle système et autres rôles
-Le gestionnaire d'instance doit être le **seul rôle attribué au niveau "Système"** dans le modèle PAD+, ce qui veut dire que ses droits s'appliquent partout. Les rôles décrits ci-dessous sont restreints au niveau de quelques catégories (gestionnaire, contributeur, stagiaire pour l'accès aux ateliers) ou des séquences (intervenant, intervenant non éditeur, stagiaire).
+Le gestionnaire d'instance doit être le **seul rôle attribué au niveau "Système"** dans le modèle PAD+, ce qui veut dire que ses droits s'appliquent partout. Les rôles décrits ci-dessous sont restreints au niveau de quelques catégories (gestionnaire, contributeur, stagiaire pour l'accès aux ateliers complémentaires) ou des séquences (intervenant, intervenant non éditeur, stagiaire).
 :::
 
 
@@ -57,7 +57,7 @@ Le gestionnaire de site est habituellement désigné par un administrateur ou un
 - N'oubliez pas de répéter cette attribution pour **toutes les catégories** que l'utilisateur doit gérer : un gestionnaire de site peut gérer par exemple la catégorie "Site A" mais aussi la catégorie voisine "Ateliers Site A".
 
 :::info Rôles multiples pour un utilisateur
-Un utilisateur peut avoir des rôles différents par catégorie. Il peut par exemple être gestionnaire de site sur des catégories "site" mais simple [contributeur](#contributeur) sur la catégorie "catalogue".
+Un utilisateur peut avoir des rôles différents par catégorie. Il peut par exemple être gestionnaire de site sur des catégories "site" mais simple [contributeur](#contributeur) sur la catégorie "ressources professionnelles".
 :::
 
 
@@ -66,15 +66,15 @@ Un utilisateur peut avoir des rôles différents par catégorie. Il peut par exe
 L'usager professionnel est soit un formateur, soit un accompagnant du domaine MPS(I).
 
 > En tant que professionnel
-> - Je peux consulter toutes les séquences sur mon site et dans le catalogue (sans m'inscrire).
+> - Je peux consulter toutes les séquences sur mon site et dans les ressources professionnelles (sans m'inscrire).
 > - Je peux créer une séquence dans l'arborescence de mon site.
 > - Je peux inscrire des stagiaires dans mes séquences et assurer le suivi des stagiaires.
-> - Je peux copier des séquences entre le catalogue et mon site.
+> - Je peux copier des ressources entre les ressources professionnelles partagées et mon site.
 
 Cet usager est défini par deux rôles à des niveaux différents dans la PAD+ :
 
-- le rôle contributeur ("créateur de cours" dans Moodle) dans un site et dans le catalogue : celui-ci lui permet de parcourir les catégories de son site et du catalogue, de consulter les séquences sans être inscrit, de créer des séquences ;
-- le rôle intervenant pour les séquences qu'il a créé (ou peut éditer) et dont il assure les inscriptions et le suivi des stagiaires ; cela inclut les séquences du catalogue dont il est l'auteur ;
+- le rôle contributeur ("créateur de cours" dans Moodle) dans un site et dans les ressources professionnelles : celui-ci lui permet de parcourir les catégories de son site et des ressources professionnelles, de consulter les séquences sans être inscrit, de créer des séquences ;
+- le rôle intervenant pour les séquences qu'il a créé (ou peut éditer) et dont il assure les inscriptions et le suivi des stagiaires ; cela inclut les ressources professionnelles dont il est l'auteur ;
 
 ### Contributeur d'une catégorie {#contributeur}
 
@@ -89,7 +89,7 @@ Un gestionnaire de la catégorie visée peut attribuer le rôle contributeur à 
 
     ![Interface d'attribution du rôle contributeur](/img/organisation/ajout_contributeur.png)
 
-- N'oubliez pas de répéter cette attribution pour **toutes les catégories** où l'utilisateur peut accéder et contribuer : il s'agit par exemple des catégories "Site A" et "Ateliers Site A" mais aussi du **catalogue**.
+- N'oubliez pas de répéter cette attribution pour **toutes les catégories** où l'utilisateur peut accéder et contribuer : il s'agit par exemple des catégories "Site A" et "Ateliers Site A" mais aussi des **ressources professionnelles**.
 
 ### Intervenant d'une séquence (et intervenant non éditeur) {#inscription}
 
@@ -109,20 +109,20 @@ Le stagiaire a une vue limitée au contenu qui le concerne directement.
 
 > En tant que stagiaire
 > - Je peux participer aux séquences auxquelles je suis inscrit.
-> - Je peux voir les ateliers de mon site et m'inscrire tout seul.
+> - Je peux voir les ateliers complémentaires de mon site et m'inscrire tout seul.
 > - Je ne vois pas les autres séquences.
 
-Il y a deux procédures : une pour l'accès à la catégorie ateliers de son site et une pour l'inscription aux séquences.
+Il y a deux procédures : une pour l'accès à la catégorie "ateliers complémentaire" de son site et une pour l'inscription aux séquences.
 
-### Accès aux ateliers
+### Accès aux ateliers complémentaires
 
-Les ateliers sont des séquences en auto-inscription (ou accès libre) hébergés dans une catégorie particulière : les stagiaires doivent donc avoir accès à cette catégorie pour parcourir les séquences et s'inscrire eux-mêmes.
+Les ateliers complémentaires sont des séquences en auto-inscription (ou accès libre) hébergés dans une catégorie particulière : les stagiaires doivent donc avoir accès à cette catégorie pour parcourir les séquences et s'inscrire eux-mêmes.
 
-Un gestionnaire (de site ou d'instance) doit attribuer le rôle stagiaire dans la catégorie **Ateliers site** qui concerne le stagiaire.
+Un gestionnaire (de site ou d'instance) doit attribuer le rôle stagiaire dans la catégorie **Ateliers complémentaires du site** qui concerne le stagiaire.
 
 - Depuis la page de la catégorie, ouvrez le menu d'action et sélectionnez le choix **Attribution des rôles**.
 
-    ![Interface d'attribution du rôle stagiaire dans une catégorie d'ateliers](/img/organisation/ajout_stagiaire_atelier.png)
+    ![Interface d'attribution du rôle stagiaire dans une catégorie d'ateliers complémentaires](/img/organisation/ajout_stagiaire_atelier.png)
 
 - Cliquez sur le rôle Stagiaire dans la nouvelle page.
 - Recherchez et ajoutez l'utilisateur dans la liste des stagiaires.
