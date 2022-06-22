@@ -24,7 +24,7 @@ Pour ajouter un nouveau site, il faut :
 1. créer une **catégorie pour le site** *au niveau supérieur* des catégories, depuis la page  *Administration du site / Séquences / **Gestion des séquences et catégories** *
 1. créer l'arborescence des sous-catégories pour les parcours (par exemple : plateformes et modules) dans la nouvelle catégorie de site
 1. créer une catégorie pour les **ateliers complémentaires** *au niveau supérieur* des catégories, à côté donc de la catégorie du site
-1. [configurer le menu latéral](/marqueblanche/presentation#sidebarmenu) pour le bon affichage de la catégorie "Atelier"
+1. [configurer le menu latéral](/marqueblanche/presentation#sidebarmenu) pour le bon affichage de la catégorie "Ateliers complémentaires"
 
 ## Attribution des rôles des usagers sur un site PAD+
 
@@ -41,7 +41,7 @@ Un [gestionnaire de site](./roles#gestionnaire-de-site) a les droits d'administr
 Depuis la page  *Administration du site / Séquences / **Gestion des séquences et catégories** :*
 
 1. attribuer le rôle **gestionnaire** sur la catégorie du site (ouvrir le menu d'actions de la catégorie, choix "Attribution des rôles")
-1. attribuer le rôle **gestionnaire** sur la catégorie "Ateliers" associée au site
+1. attribuer le rôle **gestionnaire** sur la catégorie "Ateliers complémentaires" associée au site
 1. attribuer le rôle **contributeur** ou **gestionnaire** sur la catégorie des ressources professionnelles
 
 ### Désignation d'un professionnel formateur ou MPS(I)
@@ -49,7 +49,7 @@ Depuis la page  *Administration du site / Séquences / **Gestion des séquences 
 Depuis la page  *Administration du site / Séquences / **Gestion des séquences et catégories** :*
 
 1. attribuer le rôle **contributeur** sur la catégorie du site (ouvrir le menu d'actions de la catégorie, choix "Attribution des rôles")
-1. attribuer le rôle **contributeur** sur la catégorie "Ateliers" associée au site
+1. attribuer le rôle **contributeur** sur la catégorie "Ateliers complémentaires" associée au site
 1. attribuer le rôle **contributeur** sur la catégorie des ressources professionnelles
 
 Les [professionnels](./roles#professionnel) deviennent automatiquement **intervenants** des séquences qu'ils créent ou copient, ou bien peuvent être désignés comme tels par leurs pairs via les inscriptions dans l'administration d'une séquence.
@@ -58,6 +58,6 @@ Les [professionnels](./roles#professionnel) deviennent automatiquement **interve
 
 Depuis la page  *Administration du site / Séquences / **Gestion des séquences et catégories** :*
 
-1. attribuer le rôle **stagiaire** dans la catégorie "Atelier" liée à son site (pour l'accès aux ateliers en auto-inscription).
+1. attribuer le rôle **stagiaire** dans la catégorie "Ateliers complémentaires" liée à son site (pour l'accès aux ateliers en auto-inscription).
 
 Les [stagiaires](./roles#stagiaire) sont inscrits par les professionnels dans les séquences suivant leur parcours.

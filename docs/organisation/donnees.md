@@ -62,21 +62,21 @@ Il est recommandé d'ajouter des descriptions sur certaines catégories pour aid
 
 Sur la page de la catégorie visée, ouvrir son menu d'actions et sélectionner l'option "Modifier cette catégorie" pour pouvoir éditer sa description.
 
-Par exemple sur les catégories "Ateliers" :
+Par exemple sur les catégories "Ateliers complémentaires" :
 
 > Voici la liste des ateliers disponibles proposés par votre établissement.
 > Il peut s'agir de rencontres avec des intervenants extérieurs, d'ateliers collectifs autour d'un sujet en particulier comme la recherche d'emploi, une initiation à la méditation, une sortie culturelle, etc...
 >
 > **Ils sont ouverts en auto-inscription pour tous les stagiaires.**
 
-Par exemple pour la catégorie des ressources pour les professionnels :
+Par exemple pour la catégorie des ressources professionnelles :
 
 > **Bienvenue dans l’espace collaboratif ouvert aux professionnels de chaque établissement.**
 > Vous y retrouverez toutes les ressources mises à disposition en libre service : des séquences complètes, des fiches pratiques, des document types, etc...
 
 La description s'affiche immédiatement sous le titre de la catégorie.
 
-![Exemple de description intégrée dans une catégorie Atelier](/img/organisation/atelier_description.png)
+![Exemple de description intégrée dans une catégorie Ateliers complémentaires](/img/organisation/atelier_description.png)
 
 
 ### Export d'une arborescence existante
@@ -132,12 +132,12 @@ Notez que cette fonctionnalité d'import en masse ne gère pas toutes les option
 
 ### Import des gabarits {#gabarits}
 
-Les gabarits sont des modèles de séquence ou d'atelier que vous pouvez importer sur votre instance PAD+ pour les mettre à disposition de vos contributeurs :
+Les gabarits sont des modèles de séquence ou d'atelier complémentaire que vous pouvez importer sur votre instance PAD+ pour les mettre à disposition de vos contributeurs :
 
 - [gabarit "séquence"](pathname:///ressources/sauvegarde-moodle2-course-76-gabarit-20220613-1810-nu.mbz) : un modèle de séquence structuré avec 4 séances par défaut et quelques conseils pour la présentation et l'accessibilité
-- [gabarit "atelier"](pathname:///ressources/sauvegarde-moodle2-course-427-gabarit_atelier-20220613-1811-nu.mbz) : un modèle pour les informations d'un atelier complémentaire, sans séance mais avec une activité "feedback"
+- [gabarit "atelier complémentaire"](pathname:///ressources/sauvegarde-moodle2-course-427-gabarit_atelier-20220613-1811-nu.mbz) : un modèle pour les informations d'un atelier complémentaire, sans séance mais avec une activité "feedback"
 
-Depuis la page *Administration du site / Séquences / **Restaurer une séquence**,* déposez un des fichiers de gabarit ci-dessus et suivez la procédure de restauration. Pour le gabarit "Atelier", il est conseillé de sélectionner "Oui" pour le choix "Inclure les méthodes d'inscription" qui permet de garder l'auto-inscription pour les stagiaires. A vous de voir dans quel endroit de l'arborescence les importer pour les rendre facilement disponible pour vos usagers (par exemple, parmi les ressources pour les professionnels).
+Depuis la page *Administration du site / Séquences / **Restaurer une séquence**,* déposez un des fichiers de gabarit ci-dessus et suivez la procédure de restauration. Pour le gabarit "Atelier complémentaire", il est conseillé de sélectionner "Oui" pour le choix "Inclure les méthodes d'inscription" qui permet de garder l'auto-inscription pour les stagiaires. A vous de voir dans quel endroit de l'arborescence les importer pour les rendre facilement disponible pour vos usagers (par exemple, parmi les ressources pour les professionnels).
 
 
 ## Création des utilisateurs et inscription aux séquences {#users-register}
