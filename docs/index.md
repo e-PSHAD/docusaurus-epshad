@@ -20,7 +20,7 @@ La page **[Survol d'une instance PAD+](survol)** donne un aperçu d'une infrastr
 
 ### Marque blanche
 
-- [Document de la marque blanche (PDF)](marqueblanche/ressources/PAD_Marqueblanche_08-06-2022.pdf) : récapitulatif des éléments de la marque blanche et des principes d'accessibilité numérique pour le choix des couleurs
+- [Document de la marque blanche (PDF)](pathname:///ressources/PAD_Marqueblanche_08-06-2022.pdf) : récapitulatif des éléments de la marque blanche et des principes d'accessibilité numérique pour le choix des couleurs
 - [Présentation](marqueblanche/presentation) : nom, logo, couleurs du thème, pied de page, documents juridiques...
 
 ## Pour les administrateurs et gestionnaires d'instance (système)

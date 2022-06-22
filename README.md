@@ -1,6 +1,6 @@
 # PAD+ 🚀🚀 Technical Documentation 🚀🚀
 
-This repository holds sources for the [technical documentation](https://e-pshad.github.io/pad-doc/) of the PAD+ project.
+This repository holds sources for the [technical documentation](https://e-pshad.github.io/pad-doc/) of the PAD+ project. It also hosts some [static resources to help setup a PAD+ instance](./static/ressources/).
 
 Other repositories :
  - [PAD+ sources](https://github.com/e-PSHAD/PAD): Moodle fork customized for PAD+

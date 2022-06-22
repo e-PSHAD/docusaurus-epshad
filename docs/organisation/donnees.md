@@ -99,7 +99,7 @@ Voici un example de procédure :
 
 1. Créez un dossier `donnees/backup` avec les sauvegardes de séquence au format `.mbz` si vous en avez.
 
-2. Créez un fichier `.csv` avec la liste des séquences à créer ([voir example de fichier sequences.csv](./ressources/sequences.csv))
+2. Créez un fichier `.csv` avec la liste des séquences à créer ([voir example de fichier sequences.csv](pathname:///ressources/sequences.csv))
 
     ```
     fullname,shortname,category_path,startdate,backupfile
@@ -134,8 +134,8 @@ Notez que cette fonctionnalité d'import en masse ne gère pas toutes les option
 
 Les gabarits sont des modèles de séquence ou d'atelier que vous pouvez importer sur votre instance PAD+ pour les mettre à disposition de vos contributeurs :
 
-- [gabarit "séquence"](./ressources/sauvegarde-moodle2-course-76-gabarit-20220613-1810-nu.mbz) : un modèle de séquence structuré avec 4 séances par défaut et quelques conseils pour la présentation et l'accessibilité
-- [gabarit "atelier"](./ressources/sauvegarde-moodle2-course-427-gabarit_atelier-20220613-1811-nu.mbz) : un modèle pour les informations d'un atelier complémentaire, sans séance mais avec une activité "feedback"
+- [gabarit "séquence"](pathname:///ressources/sauvegarde-moodle2-course-76-gabarit-20220613-1810-nu.mbz) : un modèle de séquence structuré avec 4 séances par défaut et quelques conseils pour la présentation et l'accessibilité
+- [gabarit "atelier"](pathname:///ressources/sauvegarde-moodle2-course-427-gabarit_atelier-20220613-1811-nu.mbz) : un modèle pour les informations d'un atelier complémentaire, sans séance mais avec une activité "feedback"
 
 Depuis la page *Administration du site / Séquences / **Restaurer une séquence**,* déposez un des fichiers de gabarit ci-dessus et suivez la procédure de restauration. Pour le gabarit "Atelier", il est conseillé de sélectionner "Oui" pour le choix "Inclure les méthodes d'inscription" qui permet de garder l'auto-inscription pour les stagiaires. A vous de voir dans quel endroit de l'arborescence les importer pour les rendre facilement disponible pour vos usagers (par exemple, parmi les ressources pour les professionnels).
 
@@ -144,7 +144,7 @@ Depuis la page *Administration du site / Séquences / **Restaurer une séquence*
 
 Moodle fournit une [fonctionnalité pour créer des utilisateurs (MoodleDoc)](https://docs.moodle.org/311/en/Upload_users). Cette fonctionnalité peut aussi les inscrire automatiquement à des séquences. Cette fonctionnalité est accessible via l'interface ou via la ligne de commande.
 
-1. Créez un fichier `.csv` avec les utilisateurs ([voir example de fichier users.csv](./ressources/users.csv)).
+1. Créez un fichier `.csv` avec les utilisateurs ([voir example de fichier utilisateurs.csv](pathname:///ressources/utilisateurs.csv)).
 
     ```
     username,firstname,lastname,email,password,sysrole1,course1,role1,course2,role2,
@@ -162,7 +162,7 @@ Moodle fournit une [fonctionnalité pour créer des utilisateurs (MoodleDoc)](ht
 2. Importez les utilisateurs (attention au **chemin du fichier csv**) :
 
     ```
-    php admin/tool/uploaduser/cli/uploaduser.php --file=../../../../donnees/users.csv --delimiter_name=comma
+    php admin/tool/uploaduser/cli/uploaduser.php --file=../../../../donnees/utilisateurs.csv --delimiter_name=comma
     ```
 
 :::info Champs supplémentaires
@@ -174,7 +174,7 @@ Il existe de nombreux [autres champs pour la création des utilisateurs (MoodleD
 
 Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les utilisateurs se voient affecter les rôles adéquats dans les catégories concernées. Si cela est possible par des procédures manuelles dans l'interface, le script `assign_category_roles.php` permet d'attribuer ses rôles à partir d'un fichier `.csv`.
 
-1. Créez un fichier `.csv` avec les attributions des rôles par catégorie aux utilisateurs ([voir example de fichier users_categories.csv](./ressources/users_categories.csv)).
+1. Créez un fichier `.csv` avec les attributions des rôles par catégorie aux utilisateurs ([voir example de fichier utilisateurs_categories.csv](pathname:///ressources/utilisateurs_categories.csv)).
 
     ```
     category_name,role,username1,username2,username3
@@ -193,7 +193,7 @@ Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les u
 2. Attribuez les rôles (attention au **chemin du fichier csv**) :
 
     ```
-    php theme/padplus/cli/assign_category_roles.php ../../../donnees/users_categories.csv
+    php theme/padplus/cli/assign_category_roles.php ../../../donnees/utilisateurs_categories.csv
     ```
 
 
@@ -212,8 +212,8 @@ Les étapes ci-dessus peuvent être enchaînées par un playbook Ansible si tout
     ┣ category_2.xml
     ┣ sequences_1.csv
     ┣ sequences_2.csv
-    ┣ users.csv
-    ┗ users_categories.csv
+    ┣ utilisateurs.csv
+    ┗ utilisateurs_categories.csv
     ```
 
     :::caution Nommage du dossier source et chemins des fichiers
@@ -239,8 +239,8 @@ Les étapes ci-dessus peuvent être enchaînées par un playbook Ansible si tout
                 # chemin vers le dossier source des données, sans barre oblique à la fin
                 source_folder: ../../PAD/donnees
                 # le nom terminal du dossier source sera le nom du dossier cible sur le serveur, ici 'donnees'
-                users_file: donnees/users.csv
-                users_categories_file: donnees/users_categories.csv
+                users_file: donnees/utilisateurs.csv
+                users_categories_file: donnees/utilisateurs_categories.csv
                 category_files:
                     - donnees/categories_1.xml
                     - donnees/categories_2.xml
