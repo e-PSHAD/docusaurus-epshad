@@ -97,6 +97,25 @@ Vue du tableau de bord d'un gestionnaire ou d'un professionnel. Celui-ci voit le
 - Voir la [documentation générique sur le  tableau de bord (MoodleDoc)](https://docs.moodle.org/3x/fr/Tableau_de_bord).
 :::
 
+
+### Visites guidées {#visite-guidee}
+
+Les [visites guidées (MoodleDoc)](https://docs.moodle.org/3x/fr/Visites_guid%C3%A9es) sont un mécanisme intégré à Moodle. Elles affichent des didacticiels aux utilisateurs pour mettre en évidence les fonctionnalités clés, par exemple quand ils arrivent la première fois sur une activité.
+
+![Affichage de la dernière étape de la visite guidée sur la page "Mes séquences"](/img/installation/user_tour.png)
+
+Cette section propose d'installer une visite guidée sur la **page "Mes séquences"**, qui est une nouveauté de la PAD+, pour expliquer les filtres de navigation.
+
+1. Télécharger [l'archive de la visite guidée "Mes séquences"](pathname:///ressources/tour_export_6_1655833488.json).
+1. Aller sur la page *Administration du site / Présentation / **Visites guidées**. *
+1. Cliquer sur le bouton *Importer une visite guidée* en bas de la page.
+1. Déposer l'archive de la visite guidée et cliquer sur le bouton *Enregistrer*.
+
+Quand l'import est fait, la configuration des étapes de la visite guidée s'affiche. La visite guidée est active dès ce moment pour tous les utilisateurs.
+
+![Affichage des étapes dans la configuration de la visite guidée "Mes séquences"](/img/installation/user_tour_import_ok.png)
+
+
 ## Etapes suivantes
 
 Il y a encore plusieurs étapes pour rendre une instance PAD+ fonctionnelle : vous pouvez consulter la page d'[organisation du contenu](/organisation/contenu) qui explique le modèle PAD+ pour héberger plusieurs sites sur la même instance ; puis la page [Création et import de données](/organisation/donnees) pour faciliter la création ou la migration initiale des données.

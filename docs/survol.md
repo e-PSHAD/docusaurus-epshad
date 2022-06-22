@@ -55,6 +55,7 @@ La seconde étape correspond à l'installation des services fonctionnels par l'a
     - Service backup
     - Gestion des sessions
     - [Tableau de bord par défaut](/installation/configuration#configuration-tableau-de-bord)
+    - [Visite guidée de la page "Mes séquences"](/installation/configuration#visite-guidee)
 
 ### 3. Configuration de la marque blanche
 
