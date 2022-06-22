@@ -172,7 +172,7 @@ Il existe de nombreux [autres champs pour la création des utilisateurs (MoodleD
 
 ## Attribution des rôles utilisateurs dans les catégories {#users-categories}
 
-Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les utilisateurs se voient affecter les rôles adéquats dans les catégories concernées. Si cela est possible par des procédures manuelles dans l'interface, le script `assign_category_roles.php` permet d'attribuer ses rôles à partir d'un fichier `.csv`.
+Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les utilisateurs se voient affecter les rôles adéquats dans les catégories concernées. Si cela est possible par des [procédures manuelles dans l'interface](/organisation/roles), le script `assign_category_roles.php` permet d'attribuer ses rôles à partir d'un fichier `.csv`.
 
 1. Créez un fichier `.csv` avec les attributions des rôles par catégorie aux utilisateurs ([voir example de fichier utilisateurs_categories.csv](pathname:///ressources/utilisateurs_categories.csv)).
 
@@ -193,7 +193,7 @@ Pour finaliser une [organisation PAD+](/organisation/contenu), il faut que les u
 2. Attribuez les rôles (attention au **chemin du fichier csv**) :
 
     ```
-    php theme/padplus/cli/assign_category_roles.php ../../../donnees/utilisateurs_categories.csv
+    php local/padplusextensions/cli/assign_category_roles.php ../../../donnees/utilisateurs_categories.csv
     ```
 
 
