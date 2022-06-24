@@ -48,6 +48,7 @@ Cette section décrit les outils intégrés à Moodle pour gérer les politiques
 
 ### Développement
 
+- Le [guide du développeur](developpement/guide) explique les différentes extensions de Moodle pour la PAD+
 - Comment [installer une instance PAD+ en local](developpement/setup-local) pour le développement ?
 - [Personnalisation de la langue](developpement/custom-lang) : maintenance du paquetage et versioning des chaînes
 
