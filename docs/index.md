@@ -6,6 +6,11 @@ sidebar_label: Accueil
 
 # Documentation technique PAD+
 
+La PAD+ est une extension de [Moodle](https://moodle.org/) qui conjugue trois piliers :
+- un [modèle d'organisation](/organisation/contenu) du contenu et des rôles associés ;
+- une [configuration spécifique](/installation/configuration) d'une trentaine de paramètres ainsi que des permissions ;
+- des [extensions (plugins) et quelques modifications du code Moodle](/developpement/guide) open source.
+
 Ce site présente les éléments pour l'installation, l'organisation et le développement d'une instance PAD+. Elle complète la [documentation Moodle](https://docs.moodle.org/) avec les spécificités de la PAD+ et fournit des pointures utiles vers celle-ci. Pour les aspects génériques de Moodle, se référer à sa documentation propre.
 
 ## Pour les administrateurs
@@ -51,6 +56,7 @@ Cette section décrit les outils intégrés à Moodle pour gérer les politiques
 - Le [guide du développeur](developpement/guide) explique les différentes extensions de Moodle pour la PAD+
 - Comment [installer une instance PAD+ en local](developpement/setup-local) pour le développement ?
 - [Personnalisation de la langue](developpement/custom-lang) : maintenance du paquetage et versioning des chaînes
+- La page [migrations](developpement/migrations) explique les process de migration sous Moodle, en particulier pour Moodle 4
 
 ### Dépôts des sources
 
