@@ -57,7 +57,8 @@ Cette section décrit les outils intégrés à Moodle pour gérer les politiques
 - Le [guide du développeur](developpement/guide) explique les différentes extensions du code Moodle pour la PAD+
 - Comment [installer une instance PAD+ en local](developpement/setup-local) pour le développement ?
 - [Personnalisation de la langue](developpement/custom-lang) : maintenance du paquetage et versioning des chaînes
-- La page [migrations](developpement/migrations) explique les process de migration sous Moodle, en particulier pour Moodle 4
+- La page [migrations](developpement/migrations) explique les process de migration et aborde les chantiers à envisager pour Moodle 4
+- Les [études prospectives](developpement/studies) donne des éléments sur quelques extensions possibles des fonctionnalités
 
 ### Dépôts des sources
 
