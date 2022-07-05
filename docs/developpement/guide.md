@@ -1,14 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 # Guide du développeur
 
-La PAD+ est une extension de Moodle qui conjugue trois piliers :
-- un [modèle d'organisation](/organisation/contenu) du contenu et des rôles associés
-- une [configuration spécifique](/installation/configuration) d'une trentaine de paramètres ainsi que des permissions
-- des extensions (plugins) et quelques modifications du code Moodle open source
-
-Cette page détaille le dernier point. Elle donne une compréhension générale des changements apportés sur la PAD+ par rapport à la base de code Moodle, en vue de faciliter sa maintenance. En particulier elle introduit les différents éléments pour :
+Cette page donne une compréhension générale des changements apportés sur la PAD+ par rapport à la base de code Moodle, en vue de faciliter sa maintenance. En particulier elle introduit les différents éléments pour :
 
 - savoir comment les changements sont structurés
 - connaître les repères essentiels pour modifier différents aspects de la PAD+
