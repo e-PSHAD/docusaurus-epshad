@@ -30,7 +30,7 @@ Le thème PAD+ est prévu pour utiliser seulement le **logo compact**. Si on pla
 
 ## Couleurs du thème
 
-Allez sur l'interface *Administration du site / Présentation / Thèmes / PAD+*. Les trois couleurs du thème sont configurables via cette page. Il est recommandé de copier-coller directement la valeur hexadécimale en incluant le dièse, par exmple `#008A28`. Enregistrez ensuite les modifications.
+Allez sur l'interface *Administration du site / Présentation / Thèmes / PAD+*. Les couleurs du thème sont configurables via cette page. Il est recommandé de copier-coller directement la valeur hexadécimale en incluant le dièse, par exmple `#008A28`. Enregistrez ensuite les modifications.
 
 ![Panneau de configuration des couleurs du thème PAD+](/img/marqueblanche/settings-colors.png)
 
