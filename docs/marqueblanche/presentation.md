@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Seul un **administrateur de l'instance** a les droits de faire les modifications ci-dessous via les paramètres d'administration de Moodle.
 
-Le [document de la marque blanche (PDF)](pathname:///ressources/PAD_Marqueblanche_08-06-2022.pdf) récapitule tous les éléments de la marque blanche et les principes d'accessibilité numérique applicables. La suite de la page détaille les procédures pour la configuration du thème sur la plateforme.
+Le [document de la marque blanche (PDF)](pathname:///ressources/MarqueBlanche.pdf) récapitule tous les éléments de la marque blanche et les principes d'accessibilité numérique applicables. La suite de la page détaille les procédures pour la configuration du thème sur la plateforme.
 
 ## Nom du site
 
@@ -34,18 +34,19 @@ Allez sur l'interface *Administration du site / Présentation / Thèmes / PAD+*.
 
 ![Panneau de configuration des couleurs du thème PAD+](/img/marqueblanche/settings-colors.png)
 
-## Informations du pied de page {#pied-de-page}
+## Pied de page
 
-Les informations du pied de page ci-dessous sont configurables. Il s'agit de liens vers des sites externes (aide, support) ou des pages internes (contact, mentions légales, politique de confidentialité) ainsi que du copyright. La configuration de ces informations est à faire dans *Administration du site / Présentation / Thèmes / PAD+*.
+Les informations du pied de page ci-dessous sont configurables. La configuration est à faire dans *Administration du site / Présentation / Thèmes / **PAD+**.*
 
 ![Liens du pied de page](/img/marqueblanche/footer.png)
 
-- "Aide" : lien vers l'aide en ligne pour les usagers
-- "Support" : lien vers la gestion des tickets de support pour les usagers
-- "Contact" : lien vers la page avec différents moyens de contacter les établissements
-- "Mentions légales" : lien vers les informations légales sur la plateforme
-- "Politique de confidentialité" : lien vers les informations de gestion et protection des données sur la plateforme
-- "Copyright" : à définir en fonction de l'institution
+- Logo : le [logo compact du site](#logo-du-site) est aussi affiché dans le pied de page
+- Contact : lien vers la [page avec différents moyens de contact](pagesstatiques#page-statique-contact) (en ligne ou autre)
+- Tutoriels : lien vers les tutoriels en ligne pour les usagers
+- Charte d'utilisation : lien vers la charte d'utilisation approuvée par les usagers
+- Politique de confidentialité : lien vers les informations de protection des données
+- Mentions légales : lien vers les informations légales de la plateforme
+- Copyright : à définir en fonction de l'institution
 
 ### Documents juridiques
 
@@ -57,11 +58,11 @@ On distingue plusieurs documents à portée juridique :
 Une fois ces documents prêts, il faut les mettre en place sur la plateforme :
 
 - **charte d'utilisation** : il est recommandé d'utiliser [l'outil *Politiques* intégré à Moodle](/legal/politiques) pour gérer le consentement des utilisateurs ;
-- une fois la page prête, copier-coller son lien dans la configuration du pied de page ;
+    - une fois la page prête, copier-coller son lien dans la configuration du pied de page - avec le format `/admin/tool/policy/view.php?policyid=<id>`, sans autre paramètre que le `policyid`, ce qui permet de toujours pointer vers la version active de la charte ;
 - **politique de confidentialité** : une page statique suffit, soit externe, soit en la [créant via la page d'accueil](/marqueblanche/pagesstatiques#page-statique-contact), ce qui permet de l'intégrer au thème de la plateforme ;
-- une fois la page prête, copier-coller son lien dans la configuration "Politique de confidentialité" du pied de page ;
+    - une fois la page prête, copier-coller son lien dans la configuration "Politique de confidentialité" du pied de page ;
 - **mentions légales** : une page statique suffit, soit externe, soit en la [créant via la page d'accueil](/marqueblanche/pagesstatiques#page-statique-contact), ce qui permet de l'intégrer au thème de la plateforme ;
-- une fois la page prête, copier-coller son lien dans la configuration "Mentions légales" du pied de page ;
+    - une fois la page prête, copier-coller son lien dans la configuration "Mentions légales" du pied de page ;
 
 ## Menu latéral {#sidebarmenu}
 
